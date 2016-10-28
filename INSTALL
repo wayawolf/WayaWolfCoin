@@ -1,0 +1,9 @@
+Building WayaWolfCoin
+
+See doc/readme-qt.rst for instructions on building WayaWolfCoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of WayaWolfCoin.
+
+See doc/build-*.txt for instructions on building wayawolfcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of WayaWolfCoin.

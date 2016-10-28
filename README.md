@@ -1,64 +1,73 @@
-# WayaWolfCoin
+WayaWolfCoin integration/staging tree
+================================
 
-POW Specs
+http://www.wayawolfcoin.org
 
-Algorithm 	Scrypt
-Type 	PoW
-Coin name 	WayaWolfCoin
-Coin abbreviation 	WW
-Address letter 	W
-RPC port 	8912
-P2P port 	8911
-Block reward 	25 coins
-Block halving 	210000 blocks
-Total coin supply 	10500000 coins
+Copyright (c) 2009-2014 Bitcoin Developers
+Copyright (c) 2011-2014 WayaWolfCoin Developers
 
+What is WayaWolfCoin?
+----------------
 
+WayaWolfCoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
+ - 2.5 minute block targets
+ - subsidy halves in 840k blocks (~4 years)
+ - ~84 million total coins
 
-Sample WayaWolfCoin.conf
+The rest is the same as Bitcoin.
+ - 50 coins per block
+ - 2016 blocks to retarget difficulty
 
-server=1
-generate=1
-listen=1
-rpcallowip=127.0.0.1
-rpcuser=rpcuser
-rpcpassword=rpcpassword
-rpcport= 8912
-rpcthreads=499
-addnode=jjwtreasures1.ddns.net
-addnode=186.19.66.191:8911
-addnode=83.138.195.42:8911
+For more information, as well as an immediately useable, binary version of
+the WayaWolfCoin client sofware, see http://www.wayawolfcoin.org.
 
-Hello All,
+License
+-------
 
- 
+WayaWolfCoin is released under the terms of the MIT license. See `COPYING` for more
+information or see http://opensource.org/licenses/MIT.
 
-I have decided to make a new coin that has benefits; nameley buying items in the maketplace at Cryptopia which I have listed as well as my on line store.  In the future, I will strive for additional stores and coin payment services to use WayaWolfCoin.
+Development process
+-------------------
 
-Windows: 
+Developers work in their own trees, then submit pull requests when they think
+their feature or bug fix is ready.
 
-https://mega.nz/#!m1QW0Y6D!sXI2P69Ytn0OujbUhqPyxs8T1-slQuMZwiZbXvxIjSA
+If it is a simple/trivial/non-controversial change, then one of the WayaWolfCoin
+development team members simply pulls it.
 
-https://drive.google.com/file/d/0B7WB-4HPibHvZmg4RWdvQUo5RG8/view?usp=sharing
+If it is a *more complicated or potentially controversial* change, then the patch
+submitter will be asked to start a discussion with the devs and community.
 
-Linux: 
+The patch will be accepted if there is broad consensus that it is a good thing.
+Developers should expect to rework and resubmit patches if the code doesn't
+match the project's coding conventions (see `doc/coding.txt`) or are
+controversial.
 
-https://mega.nz/#!6ohBABgZ!o2HXgydXMHYo94oqKifrHb8vQnnrCWYo8io6DlyAyVA
+The `master` branch is regularly built and tested, but is not guaranteed to be
+completely stable. [Tags](https://github.com/wayawolfcoin-project/wayawolfcoin/tags) are created
+regularly to indicate new official, stable release versions of WayaWolfCoin.
 
-https://drive.google.com/open?id=0B7WB-4HPibHvZmg4RWdvQUo5RG8
+Testing
+-------
 
- 
+Testing and code review is the bottleneck for development; we get more pull
+requests than we can review and test. Please be patient and help out, and
+remember this is a security-critical project where any mistake might cost people
+lots of money.
 
-The source code and Linux daemon can be found at:
+### Automated Testing
 
-Source Code: 
+Developers are strongly encouraged to write unit tests for new code, and to
+submit new unit tests for old code.
 
-https://mega.nz/#!L1hnGALK!0ysjj3nZ98JHUFAKUpjXkymIw40HQxocuPlix6JVgGE
+Unit tests for the core code are in `src/test/`. To compile and run them:
 
-https://drive.google.com/open?id=0B7WB-4HPibHvOHZmNlBHUHhISzQ
+    cd src; make -f makefile.unix test
 
-Linux Daemon: 
+Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
-https://mega.nz/#!npZTmRLJ!-65nTbeH-sznjbd3h7aK9drgKUJ4bFFw6wVd07JDnxQ
+    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
+    make -f Makefile.test
+    ./wayawolfcoin-qt_test
 
-https://drive.google.com/open?id=0B7WB-4HPibHvQklmaHFGV1Fyb2c
