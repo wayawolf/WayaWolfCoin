@@ -12,7 +12,7 @@ What is WayaWolfCoin?
 WayaWolfCoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
  - 5 minute block targets
  - subsidy halves in 210k blocks (~2 years)
- - ~84 million total coins
+ - ~10.5 million total coins (5.25 million in 2 years)
  - 25 coins per block
  - 4 blocks to retarget difficulty
 
