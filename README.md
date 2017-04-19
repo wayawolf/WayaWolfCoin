@@ -19,6 +19,8 @@ WayaWolfCoin is a lite version of Bitcoin using scrypt as a proof-of-work algori
 For more information, as well as an immediately useable, binary version of
 the WayaWolfCoin client sofware, see http://www.wayawolfcoin.org.
 
+linux users to need to chmod -R 0777 the source folder then compile.
+
 License
 -------
 
