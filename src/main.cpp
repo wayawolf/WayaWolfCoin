@@ -1050,9 +1050,14 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, uint256 prevHash)
 
 	int64_t nSubsidy = 0 * COIN;
 		
-	if(nBestHeight = 634)
+        if(nBestHeight = 584)
 
-	nSubsidy = 1 ;
+        nSubsidy = 1 ;
+
+
+        if(nBestHeight = 644)
+
+        nSubsidy = 1 ;
 
 
 	if(nBestHeight > 200000)
