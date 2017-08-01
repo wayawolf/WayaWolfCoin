@@ -1048,8 +1048,13 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, uint256 prevHash)
     //long seed = hex2long(cseed);
     //int rand1 = generateMTRandom(seed, 1000000);
 
-	 int64_t nSubsidy = 0 * COIN;
+	int64_t nSubsidy = 0 * COIN;
 		
+	if(nBestHeight = 634)
+
+	nSubsidy = 1 ;
+
+
 	if(nBestHeight > 200000)
     
 	nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
