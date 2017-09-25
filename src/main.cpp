@@ -1050,9 +1050,14 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, uint256 prevHash)
 
 	int64_t nSubsidy = 0 * COIN;
 		
-	if(nBestHeight = 634)
+        if(nBestHeight = 584)
 
-	nSubsidy = 1 ;
+        nSubsidy = 1 ;
+
+
+        if(nBestHeight = 644)
+
+        nSubsidy = 1 ;
 
 
 	if(nBestHeight > 200000)
@@ -1160,12 +1165,17 @@ static unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool 
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
 
+    // fix difficulty for moving chain again
+    if (pindexLast->nHeight == 7749)
+        return bnTargetLimit.GetCompact();  
+
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
     if (pindexPrev->pprev == NULL)
         return bnTargetLimit.GetCompact(); // first block
     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
     if (pindexPrevPrev->pprev == NULL)
         return bnTargetLimit.GetCompact(); // second block
+
 
     int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
     if (nActualSpacing < 0)
@@ -1179,15 +1189,17 @@ static unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool 
     bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
     bnNew /= ((nInterval + 1) * nTargetSpacing);
 
+
     if (bnNew <= 0 || bnNew > bnTargetLimit)
         bnNew = bnTargetLimit;
+
 
     return bnNew.GetCompact();
 }
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if (pindexLast->nHeight < 100000)
+    if (pindexLast->nHeight < 7748)
         return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
     else
         return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
