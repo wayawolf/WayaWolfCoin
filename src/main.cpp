@@ -1048,27 +1048,18 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, uint256 prevHash)
     //long seed = hex2long(cseed);
     //int rand1 = generateMTRandom(seed, 1000000);
 
-	int64_t nSubsidy = 0 * COIN;
+    int64_t nSubsidy = 0 * COIN;
 		
-        if(nBestHeight = 584)
+    if(nBestHeight == 584)
+        nSubsidy = 1;
 
-        nSubsidy = 1 ;
+    if(nBestHeight == 644)
+        nSubsidy = 1;
 
-
-        if(nBestHeight = 644)
-
-        nSubsidy = 1 ;
-
-
-	if(nBestHeight > 200000)
-    
+    if(nBestHeight > 200000)
 	nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
-    
-	    
-	else if(nBestHeight > 400000)
-    
+    else if(nBestHeight > 400000)
         nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) / 2;
-    
 	
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRId64 "\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
