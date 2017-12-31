@@ -3,22 +3,24 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About LiteCoinUltra</source>
-        <translation>О LiteCoinUltra</translation>
+        <source>About RainbowLite</source>
+        <translation>О RainbowLite</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;LiteCoinUltra&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;LiteCoinUltra&lt;/b&gt; версия</translation>
+        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;RainbowLite&lt;/b&gt; версия</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers</source>
+Copyright © 2014 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers</source>
         <translation>Все права защищены © 2009-2014 Разработчики Bitcoin
 Все права защищены © 2012-2014 Разработчики NovaCoin
-Все права защищены © 2014 Разработчики LiteCoinUltra</translation>
+Все права защищены © 2014 Разработчики LiteCoinUltra
+Все права защищены © 2018 Разработчики RainbowLite</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your LiteCoinUltra addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -80,8 +82,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a LiteCoinUltra address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом LiteCoinUltra</translation>
+        <source>Sign a message to prove you own a RainbowLite address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом RainbowLite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +97,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified LiteCoinUltra address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом LiteCoinUltra</translation>
+        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом RainbowLite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,7 +265,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>LiteCoinUltra will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -377,8 +379,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about LiteCoinUltra</source>
-        <translation>Показать информацию о LiteCoinUltra&apos;е</translation>
+        <source>Show information about RainbowLite</source>
+        <translation>Показать информацию о RainbowLite&apos;е</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +429,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a LiteCoinUltra address</source>
-        <translation>Отправить монеты на указанный адрес LiteCoinUltra</translation>
+        <source>Send coins to a RainbowLite address</source>
+        <translation>Отправить монеты на указанный адрес RainbowLite</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for LiteCoinUltra</source>
-        <translation>Изменить параметры конфигурации LiteCoinUltra</translation>
+        <source>Modify configuration options for RainbowLite</source>
+        <translation>Изменить параметры конфигурации RainbowLite</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +474,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-200"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +484,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About LiteCoinUltra</source>
-        <translation>&amp;О LiteCoinUltra</translation>
+        <source>&amp;About RainbowLite</source>
+        <translation>&amp;О RainbowLite</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,12 +541,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>LiteCoinUltra client</source>
-        <translation>LiteCoinUltra клиент</translation>
+        <source>RainbowLite client</source>
+        <translation>RainbowLite клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to LiteCoinUltra network</source>
+        <source>%n active connection(s) to RainbowLite network</source>
         <translation><numerusform>%n активное соединение с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform></translation>
     </message>
     <message>
@@ -659,8 +661,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid LiteCoinUltra address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом LiteCoinUltra или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом RainbowLite или неправильными параметрами URI.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -719,8 +721,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. LiteCoinUltra can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. LiteCoinUltra не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. RainbowLite не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -1039,8 +1041,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid LiteCoinUltra address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным LiteCoinUltra-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным RainbowLite-адресом.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1058,8 +1060,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>LiteCoinUltra-Qt</source>
-        <translation>LiteCoinUltra-Qt</translation>
+        <source>RainbowLite-Qt</source>
+        <translation>RainbowLite-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1131,13 +1133,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start LiteCoinUltra after logging in to the system.</source>
-        <translation>Автоматически запускать LiteCoinUltra после входа в систему</translation>
+        <source>Automatically start RainbowLite after logging in to the system.</source>
+        <translation>Автоматически запускать RainbowLite после входа в систему</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start LiteCoinUltra on system login</source>
-        <translation>&amp;Запускать LiteCoinUltra при входе в систему</translation>
+        <source>&amp;Start RainbowLite on system login</source>
+        <translation>&amp;Запускать RainbowLite при входе в систему</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1156,8 +1158,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the LiteCoinUltra client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для LiteCoinUltra-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для RainbowLite-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1166,8 +1168,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the LiteCoinUltra network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Подключаться к сети LiteCoinUltra через прокси SOCKS (например, при подключении через Tor).</translation>
+        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети RainbowLite через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1241,8 +1243,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска LiteCoinUltra.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска RainbowLite.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1256,8 +1258,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show LiteCoinUltra addresses in the transaction list or not.</source>
-        <translation>Показывать ли адреса LiteCoinUltra в списке транзакций.</translation>
+        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса RainbowLite в списке транзакций.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1303,8 +1305,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Эта настройка вступит в силу после перезапуска LiteCoinUltra</translation>
+        <source>This setting will take effect after restarting RainbowLite.</source>
+        <translation>Эта настройка вступит в силу после перезапуска RainbowLite</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1322,8 +1324,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LiteCoinUltra network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью LiteCoinUltra после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью RainbowLite после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1538,8 +1540,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the LiteCoinUltra-Qt help message to get a list with possible LiteCoinUltra command-line options.</source>
-        <translation>Показать помощь по LiteCoinUltra-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
+        <translation>Показать помощь по RainbowLite-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1558,13 +1560,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>LiteCoinUltra - Debug window</source>
-        <translation>LiteCoinUltra - Окно отладки</translation>
+        <source>RainbowLite - Debug window</source>
+        <translation>RainbowLite - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>LiteCoinUltra Core</source>
-        <translation>Ядро LiteCoinUltra</translation>
+        <source>RainbowLite Core</source>
+        <translation>Ядро RainbowLite</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1573,8 +1575,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the LiteCoinUltra debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл LiteCoinUltra из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл RainbowLite из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1583,8 +1585,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the LiteCoinUltra RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль LiteCoinUltra.</translation>
+        <source>Welcome to the RainbowLite RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль RainbowLite.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1742,8 +1744,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите LiteCoinUltra-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите RainbowLite-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1842,7 +1844,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid LiteCoinUltra address</source>
+        <source>WARNING: Invalid RainbowLite address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1916,8 +1918,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите LiteCoinUltra-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите RainbowLite-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1977,8 +1979,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this LiteCoinUltra address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом LiteCoinUltra</translation>
+        <source>Sign the message to prove you own this RainbowLite address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом RainbowLite</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2009,8 +2011,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified LiteCoinUltra address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом LiteCoinUltra</translation>
+        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом RainbowLite</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2020,8 +2022,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите адрес LiteCoinUltra (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите адрес RainbowLite (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2030,8 +2032,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter LiteCoinUltra signature</source>
-        <translation>Введите подпись LiteCoinUltra</translation>
+        <source>Enter RainbowLite signature</source>
+        <translation>Введите подпись RainbowLite</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2601,7 +2603,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>LiteCoinUltra version</source>
+        <source>RainbowLite version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -2611,8 +2613,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or LiteCoinUltrad</source>
-        <translation>Отправить команду на -server или LiteCoinUltrad</translation>
+        <source>Send command to -server or RainbowLited</source>
+        <translation>Отправить команду на -server или RainbowLited</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2632,13 +2634,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: LiteCoinUltra.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: LiteCoinUltra.conf)</translation>
+        <source>Specify configuration file (default: RainbowLite.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: RainbowLite.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: LiteCoinUltrad.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: LiteCoinUltrad.pid)</translation>
+        <source>Specify pid file (default: RainbowLited.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: RainbowLited.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2787,8 +2789,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LiteCoinUltra will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, LiteCoinUltra будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, RainbowLite будет работать некорректно.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2977,13 +2979,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3109,13 +3111,13 @@ for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admi
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  LiteCoinUltra is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
         <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, бумажник уже запущен.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3149,13 +3151,13 @@ for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admi
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of LiteCoinUltra</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию LiteCoinUltra</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию RainbowLite</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart LiteCoinUltra to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите LiteCoinUltra для завершения операции</translation>
+        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите RainbowLite для завершения операции</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3224,8 +3226,8 @@ for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admi
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. LiteCoinUltra is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, LiteCoinUltra уже работает.</translation>
+        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, RainbowLite уже работает.</translation>
     </message>
     <message>
         <location line="-97"/>

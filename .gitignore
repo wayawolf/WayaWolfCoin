@@ -1,7 +1,7 @@
 src/*.exe
-src/LiteCoinUltra
-src/LiteCoinUltrad
-src/test_LiteCoinUltra
+src/RainbowLite
+src/RainbowLited
+src/test_RainbowLite
 src/build.h
 .*.swp
 *.*~*
@@ -10,11 +10,11 @@ src/build.h
 *.orig
 *.o
 *.patch
-.LiteCoinUltra
+.RainbowLite
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-LiteCoinUltra-qt
+RainbowLite-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

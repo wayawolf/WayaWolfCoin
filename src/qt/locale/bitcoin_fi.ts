@@ -3,19 +3,20 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About LiteCoinUltra</source>
-        <translation>Tietoa LiteCoinUltraista</translation>
+        <source>About RainbowLite</source>
+        <translation>Tietoa RainbowLiteista</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;LiteCoinUltra&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;LiteCoinUltra&lt;/b&gt; versio</translation>
+        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;RainbowLite&lt;/b&gt; versio</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers</source>
+Copyright © 2014 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -64,8 +65,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your LiteCoinUltra addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Nämä ovat LiteCoinUltra-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
+        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Nämä ovat RainbowLite-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -79,8 +80,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a LiteCoinUltra address</source>
-        <translation>Allekirjoita viesti osoittaaksesi LiteCoinUltra-osoitteesi omistajuus</translation>
+        <source>Sign a message to prove you own a RainbowLite address</source>
+        <translation>Allekirjoita viesti osoittaaksesi RainbowLite-osoitteesi omistajuus</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +95,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified LiteCoinUltra address</source>
-        <translation>Vahvista viesti varmistaaksesi että kyseinen LiteCoinUltra-osoitteesi on allekirjoittanut sen</translation>
+        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
+        <translation>Vahvista viesti varmistaaksesi että kyseinen RainbowLite-osoitteesi on allekirjoittanut sen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -262,8 +263,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-58"/>
-        <source>LiteCoinUltra will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>LiteCoinUltra-ohjelma sulkee itsensä päättääkseen salauksen luonnin. Muista, että lompakon salaaminen ei täysin turvaa kolikoitasi haittaohjelmien aiheuttamien varkauksien uhalta.</translation>
+        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>RainbowLite-ohjelma sulkee itsensä päättääkseen salauksen luonnin. Muista, että lompakon salaaminen ei täysin turvaa kolikoitasi haittaohjelmien aiheuttamien varkauksien uhalta.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +377,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about LiteCoinUltra</source>
-        <translation>Näytä tietoja LiteCoinUltraista</translation>
+        <source>Show information about RainbowLite</source>
+        <translation>Näytä tietoja RainbowLiteista</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -426,13 +427,13 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a LiteCoinUltra address</source>
-        <translation>Lähetä kolikkoja LiteCoinUltra osoitteeseen</translation>
+        <source>Send coins to a RainbowLite address</source>
+        <translation>Lähetä kolikkoja RainbowLite osoitteeseen</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for LiteCoinUltra</source>
-        <translation>Mukauta LiteCoinUltrain konfigurointiasetuksia</translation>
+        <source>Modify configuration options for RainbowLite</source>
+        <translation>Mukauta RainbowLitein konfigurointiasetuksia</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -471,8 +472,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-200"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -481,8 +482,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About LiteCoinUltra</source>
-        <translation>&amp;Tietoa LiteCoinUltraista</translation>
+        <source>&amp;About RainbowLite</source>
+        <translation>&amp;Tietoa RainbowLiteista</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -538,13 +539,13 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>LiteCoinUltra client</source>
-        <translation>LiteCoinUltra-asiakas</translation>
+        <source>RainbowLite client</source>
+        <translation>RainbowLite-asiakas</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to LiteCoinUltra network</source>
-        <translation><numerusform>%n aktiivinen yhteys LiteCoinUltra-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä LiteCoinUltra-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to RainbowLite network</source>
+        <translation><numerusform>%n aktiivinen yhteys RainbowLite-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä RainbowLite-verkkoon</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -657,8 +658,8 @@ Osoite: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid LiteCoinUltra address or malformed URI parameters.</source>
-        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä LiteCoinUltra-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
+        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä RainbowLite-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -717,8 +718,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. LiteCoinUltra can no longer continue safely and will quit.</source>
-        <translation>Vakava virhe kohdattu. LiteCoinUltra-ohjelma ei voi enää jatkaa turvallisesti ja sulkee itsensä.</translation>
+        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
+        <translation>Vakava virhe kohdattu. RainbowLite-ohjelma ei voi enää jatkaa turvallisesti ja sulkee itsensä.</translation>
     </message>
 </context>
 <context>
@@ -1051,8 +1052,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid LiteCoinUltra address.</source>
-        <translation>Syöttämäsi osoite &quot;%1&quot; ei ole hyväksytty LiteCoinUltra-osoite.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
+        <translation>Syöttämäsi osoite &quot;%1&quot; ei ole hyväksytty RainbowLite-osoite.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1070,8 +1071,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>LiteCoinUltra-Qt</source>
-        <translation>LiteCoinUltra-Qt</translation>
+        <source>RainbowLite-Qt</source>
+        <translation>RainbowLite-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1143,13 +1144,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start LiteCoinUltra after logging in to the system.</source>
-        <translation>Käynnistä LiteCoinUltra-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
+        <source>Automatically start RainbowLite after logging in to the system.</source>
+        <translation>Käynnistä RainbowLite-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start LiteCoinUltra on system login</source>
-        <translation>%Käynnistä LiteCoinUltra-asiakasohjelma kirjautuessasi</translation>
+        <source>&amp;Start RainbowLite on system login</source>
+        <translation>%Käynnistä RainbowLite-asiakasohjelma kirjautuessasi</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1168,8 +1169,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the LiteCoinUltra client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa LiteCoinUltra-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
+        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa RainbowLite-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1178,8 +1179,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the LiteCoinUltra network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Yhdistä LiteCoinUltra-verkkoon SOCKS-välityspalvelimen lävitse. (esim. yhdistettäessä Tor:n läpi).</translation>
+        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Yhdistä RainbowLite-verkkoon SOCKS-välityspalvelimen lävitse. (esim. yhdistettäessä Tor:n läpi).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,8 +1254,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta LiteCoinUltra-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
+        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta RainbowLite-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1268,8 +1269,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show LiteCoinUltra addresses in the transaction list or not.</source>
-        <translation>Näytä tai piilota LiteCoinUltra-osoitteet rahansiirtolistassa.</translation>
+        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
+        <translation>Näytä tai piilota RainbowLite-osoitteet rahansiirtolistassa.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1315,8 +1316,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Tämä asetus tulee voimaan vasta LiteCoinUltra-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>This setting will take effect after restarting RainbowLite.</source>
+        <translation>Tämä asetus tulee voimaan vasta RainbowLite-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1334,8 +1335,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LiteCoinUltra network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti LiteCoinUltra-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti RainbowLite-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1550,8 +1551,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the LiteCoinUltra-Qt help message to get a list with possible LiteCoinUltra command-line options.</source>
-        <translation>Näytä LiteCoinUltra-Qt:n avustusohje saadaksesi listan käytettävistä LiteCoinUltrain komentokehotteen määritteistä.</translation>
+        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
+        <translation>Näytä RainbowLite-Qt:n avustusohje saadaksesi listan käytettävistä RainbowLitein komentokehotteen määritteistä.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,13 +1571,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>LiteCoinUltra - Debug window</source>
-        <translation>LiteCoinUltra - Debug-ikkuna</translation>
+        <source>RainbowLite - Debug window</source>
+        <translation>RainbowLite - Debug-ikkuna</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>LiteCoinUltra Core</source>
-        <translation>LiteCoinUltrain ydin</translation>
+        <source>RainbowLite Core</source>
+        <translation>RainbowLitein ydin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1585,8 +1586,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the LiteCoinUltra debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa LiteCoinUltra-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
+        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa RainbowLite-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1595,8 +1596,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the LiteCoinUltra RPC console.</source>
-        <translation>Tervetuloa LiteCoinUltrain RPC-konsoliin.</translation>
+        <source>Welcome to the RainbowLite RPC console.</source>
+        <translation>Tervetuloa RainbowLitein RPC-konsoliin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1754,8 +1755,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä LiteCoinUltra-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä RainbowLite-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1854,8 +1855,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid LiteCoinUltra address</source>
-        <translation>VAROITUS: Epäkelpo LiteCoinUltra-osoite</translation>
+        <source>WARNING: Invalid RainbowLite address</source>
+        <translation>VAROITUS: Epäkelpo RainbowLite-osoite</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1928,8 +1929,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä LiteCoinUltra-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä RainbowLite-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1989,8 +1990,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this LiteCoinUltra address</source>
-        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän LiteCoinUltra-osoitteen</translation>
+        <source>Sign the message to prove you own this RainbowLite address</source>
+        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän RainbowLite-osoitteen</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2021,8 +2022,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified LiteCoinUltra address</source>
-        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä LiteCoinUltra-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
+        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä RainbowLite-osoitteella</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2032,8 +2033,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä LiteCoinUltra-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä RainbowLite-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2042,8 +2043,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter LiteCoinUltra signature</source>
-        <translation>Syötä LiteCoinUltra-allekirjoitus</translation>
+        <source>Enter RainbowLite signature</source>
+        <translation>Syötä RainbowLite-allekirjoitus</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2613,8 +2614,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>LiteCoinUltra version</source>
-        <translation>LiteCoinUltrain versio</translation>
+        <source>RainbowLite version</source>
+        <translation>RainbowLitein versio</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2623,8 +2624,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or LiteCoinUltrad</source>
-        <translation>Syötä komento kohteeseen -server tai LiteCoinUltrad</translation>
+        <source>Send command to -server or RainbowLited</source>
+        <translation>Syötä komento kohteeseen -server tai RainbowLited</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2643,13 +2644,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: LiteCoinUltra.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: LiteCoinUltra.conf)</translation>
+        <source>Specify configuration file (default: RainbowLite.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: RainbowLite.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: LiteCoinUltrad.pid)</source>
-        <translation>Määritä prosessitiedosto (oletus: LiteCoinUltra.pid)</translation>
+        <source>Specify pid file (default: RainbowLited.pid)</source>
+        <translation>Määritä prosessitiedosto (oletus: RainbowLite.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2798,8 +2799,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LiteCoinUltra will not work properly.</source>
-        <translation>Varoitus: Tarkista, että tietokoneesi aika ja päivämäärä ovat oikeassa! Jos kellosi on väärässä, LiteCoinUltra ei toimi oikein.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
+        <translation>Varoitus: Tarkista, että tietokoneesi aika ja päivämäärä ovat oikeassa! Jos kellosi on väärässä, RainbowLite ei toimi oikein.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2988,23 +2989,23 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
 </source>
         <translation>%s, sinun on asetettava rpcpassword asetustiedostoon:
 %s
 On suositeltavaa, että käytät seuraavaa arvottua salasanaa:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (Sinun ei tarvitse muistaa tätä salasanaa)
 Käyttäjänimen ja salasanan EI TULE OLLA SAMOJA.
 Jos tiedostoa ei ole olemassa, luo se asettaen samalla omistajan lukuoikeudet.
-On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admin@foo.com
+On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3129,13 +3130,13 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  LiteCoinUltra is probably already running.</source>
-        <translation>Ei voida saavuttaa lukkoa datatiedostossa %s. LiteCoinUltra-asiakasohjelma on ehkä jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
+        <translation>Ei voida saavuttaa lukkoa datatiedostossa %s. RainbowLite-asiakasohjelma on ehkä jo käynnissä.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3169,13 +3170,13 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of LiteCoinUltra</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version LiteCoinUltra-asiakasohjelmasta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version RainbowLite-asiakasohjelmasta</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart LiteCoinUltra to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä LiteCoinUltra-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
+        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä RainbowLite-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3244,8 +3245,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. LiteCoinUltra is probably already running.</source>
-        <translation>Ei voitu liittää %s tällä tietokoneella. LiteCoinUltra-asiakasohjelma on jo ehkä päällä.</translation>
+        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
+        <translation>Ei voitu liittää %s tällä tietokoneella. RainbowLite-asiakasohjelma on jo ehkä päällä.</translation>
     </message>
     <message>
         <location line="-97"/>

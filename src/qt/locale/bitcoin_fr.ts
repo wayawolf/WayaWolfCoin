@@ -3,22 +3,24 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About LiteCoinUltra</source>
-        <translation>Au sujet de LiteCoinUltra</translation>
+        <source>About RainbowLite</source>
+        <translation>Au sujet de RainbowLite</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;LiteCoinUltra&lt;/b&gt; version</source>
-        <translation>Version de &lt;b&gt;LiteCoinUltra&lt;/b&gt;</translation>
+        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
+        <translation>Version de &lt;b&gt;RainbowLite&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers</source>
-        <translation>Copyright © 2009-2014 Les développeurs Bitcoin
-Copyright © 2012-2014 Les développeurs NovaCoin
-Copyright © 2014 Les développeurs LiteCoinUltra</translation>
+Copyright © 2014 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers</source>
+        <translation>Copyright © 2009-2014 The Bitcoin developers
+Copyright © 2012-2014 The NovaCoin developers
+Copyright © 2014 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your LiteCoinUltra addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Ce sont vos adresses pour recevoir vos paiements. Vous pouvez utiliser une adresse différente pour chaque réception afin d&apos;identifier facilement le payeur.</translation>
     </message>
     <message>
@@ -80,8 +82,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a LiteCoinUltra address</source>
-        <translation>Signer un message afin de valider l&apos;identité de votre adresse LiteCoinUltra</translation>
+        <source>Sign a message to prove you own a RainbowLite address</source>
+        <translation>Signer un message afin de valider l&apos;identité de votre adresse RainbowLite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +97,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified LiteCoinUltra address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse LiteCoinUltra spécifique.</translation>
+        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse RainbowLite spécifique.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -237,7 +239,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>Avertissement : Si vous chiffrez votre portefeuille et perdez votre passphrase, vous ne pourrez &lt;b&gt;plus accéder à vos LiteCoinUltras&lt;/b&gt;!</translation>
+        <translation>Avertissement : Si vous chiffrez votre portefeuille et perdez votre passphrase, vous ne pourrez &lt;b&gt;plus accéder à vos RainbowLites&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -263,8 +265,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>LiteCoinUltra will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>L&apos;application LiteCoinUltra va désormais se terminer afin de finaliser le processus de chiffrage. Merci de noter que le chiffrage du portefeuille ne garantit pas de se prémunir du vol via utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
+        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>L&apos;application RainbowLite va désormais se terminer afin de finaliser le processus de chiffrage. Merci de noter que le chiffrage du portefeuille ne garantit pas de se prémunir du vol via utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +379,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about LiteCoinUltra</source>
-        <translation>Afficher des informations au sujet de LiteCoinUltra</translation>
+        <source>Show information about RainbowLite</source>
+        <translation>Afficher des informations au sujet de RainbowLite</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +429,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a LiteCoinUltra address</source>
-        <translation>Envoyer des monnaies vers une adresse LiteCoinUltra</translation>
+        <source>Send coins to a RainbowLite address</source>
+        <translation>Envoyer des monnaies vers une adresse RainbowLite</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for LiteCoinUltra</source>
-        <translation>Modification des options de configuration de LiteCoinUltra</translation>
+        <source>Modify configuration options for RainbowLite</source>
+        <translation>Modification des options de configuration de RainbowLite</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +474,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-200"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +484,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About LiteCoinUltra</source>
-        <translation>&amp;Au sujet de LiteCoinUltra</translation>
+        <source>&amp;About RainbowLite</source>
+        <translation>&amp;Au sujet de RainbowLite</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +541,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>LiteCoinUltra client</source>
-        <translation>Client LiteCoinUltra</translation>
+        <source>RainbowLite client</source>
+        <translation>Client RainbowLite</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to LiteCoinUltra network</source>
-        <translation><numerusform>%n connexion active au réseau LiteCoinUltra</numerusform><numerusform>%n connexions actives au réseau LiteCoinUltra</numerusform></translation>
+        <source>%n active connection(s) to RainbowLite network</source>
+        <translation><numerusform>%n connexion active au réseau RainbowLite</numerusform><numerusform>%n connexions actives au réseau RainbowLite</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -659,8 +661,8 @@ Adresse : %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid LiteCoinUltra address or malformed URI parameters.</source>
-        <translation>L&apos;adresse du portefeuille LiteCoinUltra n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
+        <translation>L&apos;adresse du portefeuille RainbowLite n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -719,8 +721,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. LiteCoinUltra can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a été rencontrée. L&apos;application LiteCoinUltra ne peut plus être s&apos;exécuter de façon correcte et va se terminer.</translation>
+        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a été rencontrée. L&apos;application RainbowLite ne peut plus être s&apos;exécuter de façon correcte et va se terminer.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1055,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid LiteCoinUltra address.</source>
-        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse LiteCoinUltra valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
+        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse RainbowLite valide.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1074,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>LiteCoinUltra-Qt</source>
-        <translation>LiteCoinUltra-Qt</translation>
+        <source>RainbowLite-Qt</source>
+        <translation>RainbowLite-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1147,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start LiteCoinUltra after logging in to the system.</source>
-        <translation>Démarrage automatique du client LiteCoinUltra lors de la connexion au système</translation>
+        <source>Automatically start RainbowLite after logging in to the system.</source>
+        <translation>Démarrage automatique du client RainbowLite lors de la connexion au système</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start LiteCoinUltra on system login</source>
-        <translation>&amp;Démarrage du client LiteCoinUltra à la connexion au système</translation>
+        <source>&amp;Start RainbowLite on system login</source>
+        <translation>&amp;Démarrage du client RainbowLite à la connexion au système</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1170,8 +1172,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the LiteCoinUltra client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquemwnr le port client de LiteCoinUltra sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
+        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquemwnr le port client de RainbowLite sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1180,8 +1182,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the LiteCoinUltra network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connexion au réseau LiteCoinUltra à travers un proxy SOCKS (e.g. Connexion via le réseau Tor).</translation>
+        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connexion au réseau RainbowLite à travers un proxy SOCKS (e.g. Connexion via le réseau Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1255,8 +1257,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>La langue d&apos;interface de l&apos;utilisateur peut être définie ici. Les modification seront prises en compte après redémarrage de l&apos;application LiteCoinUltra</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
+        <translation>La langue d&apos;interface de l&apos;utilisateur peut être définie ici. Les modification seront prises en compte après redémarrage de l&apos;application RainbowLite</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1270,8 +1272,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show LiteCoinUltra addresses in the transaction list or not.</source>
-        <translation>Afficher les adresses LiteCoinUltra au sein de la liste de transactions</translation>
+        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
+        <translation>Afficher les adresses RainbowLite au sein de la liste de transactions</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1317,8 +1319,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Les paramètres prendront effet après redémarrage du client LiteCoinUltra</translation>
+        <source>This setting will take effect after restarting RainbowLite.</source>
+        <translation>Les paramètres prendront effet après redémarrage du client RainbowLite</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1336,8 +1338,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LiteCoinUltra network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau LiteCoinUltra mais ce processus n&apos;est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau RainbowLite mais ce processus n&apos;est pas encore terminé.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1552,8 +1554,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the LiteCoinUltra-Qt help message to get a list with possible LiteCoinUltra command-line options.</source>
-        <translation>Afficher le message d&apos;aide LiteCoinUltra-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande LiteCoinUltra</translation>
+        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
+        <translation>Afficher le message d&apos;aide RainbowLite-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande RainbowLite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1572,13 +1574,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="-104"/>
-        <source>LiteCoinUltra - Debug window</source>
-        <translation>LiteCoinUltra - Fenêtre de déboggage</translation>
+        <source>RainbowLite - Debug window</source>
+        <translation>RainbowLite - Fenêtre de déboggage</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>LiteCoinUltra Core</source>
-        <translation>LiteCoinUltra Core</translation>
+        <source>RainbowLite Core</source>
+        <translation>RainbowLite Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1587,8 +1589,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the LiteCoinUltra debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier journal de debug LiteCoinUltra au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
+        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ouvrir le fichier journal de debug RainbowLite au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1597,8 +1599,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the LiteCoinUltra RPC console.</source>
-        <translation>Bienvenue sur la console RPC de LiteCoinUltra.</translation>
+        <source>Welcome to the RainbowLite RPC console.</source>
+        <translation>Bienvenue sur la console RPC de RainbowLite.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1756,8 +1758,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse LiteCoinUltra (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse RainbowLite (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1856,8 +1858,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid LiteCoinUltra address</source>
-        <translation>AVERTISSEMENT: Adresse LiteCoinUltra Invalide</translation>
+        <source>WARNING: Invalid RainbowLite address</source>
+        <translation>AVERTISSEMENT: Adresse RainbowLite Invalide</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1867,7 +1869,7 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+4"/>
         <source>WARNING: unknown change address</source>
-        <translation>AVERTISSEMENT: Adresse LiteCoinUltra Invalide</translation>
+        <translation>AVERTISSEMENT: Adresse RainbowLite Invalide</translation>
     </message>
 </context>
 <context>
@@ -1930,8 +1932,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse LiteCoinUltra (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse RainbowLite (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1955,7 +1957,7 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse LiteCoinUltra (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation>Entrer une adresse RainbowLite (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1991,8 +1993,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this LiteCoinUltra address</source>
-        <translation>Signer le message afin de prouver l&apos;identité de votre adresse LiteCoinUltra</translation>
+        <source>Sign the message to prove you own this RainbowLite address</source>
+        <translation>Signer le message afin de prouver l&apos;identité de votre adresse RainbowLite</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2023,8 +2025,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified LiteCoinUltra address</source>
-        <translation>Vérifiez le message afin de vous assurer qu&apos;il provient de l&apos;adresse LiteCoinUltra spécifiée.</translation>
+        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
+        <translation>Vérifiez le message afin de vous assurer qu&apos;il provient de l&apos;adresse RainbowLite spécifiée.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2034,8 +2036,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse LiteCoinUltra (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse RainbowLite (par ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2044,8 +2046,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter LiteCoinUltra signature</source>
-        <translation>Entrer une signature LiteCoinUltra</translation>
+        <source>Enter RainbowLite signature</source>
+        <translation>Entrer une signature RainbowLite</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2615,8 +2617,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>LiteCoinUltra version</source>
-        <translation>Version LiteCoinUltra</translation>
+        <source>RainbowLite version</source>
+        <translation>Version RainbowLite</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2625,8 +2627,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or LiteCoinUltrad</source>
-        <translation>Envoyer commande à -server ou LiteCoinUltrad</translation>
+        <source>Send command to -server or RainbowLited</source>
+        <translation>Envoyer commande à -server ou RainbowLited</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2645,13 +2647,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: LiteCoinUltra.conf)</source>
-        <translation>Spécifier le fichier de configuration (par défaut: LiteCoinUltra.conf)</translation>
+        <source>Specify configuration file (default: RainbowLite.conf)</source>
+        <translation>Spécifier le fichier de configuration (par défaut: RainbowLite.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: LiteCoinUltrad.pid)</source>
-        <translation>Spécifier le fichier pid (par défaut: LiteCoinUltrad.pid)</translation>
+        <source>Specify pid file (default: RainbowLited.pid)</source>
+        <translation>Spécifier le fichier pid (par défaut: RainbowLited.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2800,8 +2802,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LiteCoinUltra will not work properly.</source>
-        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. LiteCoinUltra ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. RainbowLite ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2990,24 +2992,24 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
 </source>
         <translation>%s, vous devez définir un mot de passe rpc &apos;rpcpassword&apos; au sein du fichier de configuration:
  %s
 Il est recommandé d&apos;utiliser le mot de passe aléatoire suivant:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (il n&apos;est pas nécessaire de retenir ce mot de passe)
 Le nom d&apos;utilisateur et le mot de passe doivent IMPERATIVEMENT être différents.
 Si le fichier n&apos;existe pas, il est nécessaire de le créer, avec les droit de lecture au propriétaire seulement.
 Il est également recommandé d&apos;utiliser l&apos;option alertnotify afin d&apos;être notifié des problèmes;
-par exemple: alertnotify=echo %%s | mail -s &quot;Alerte LiteCoinUltra&quot; admin@foo.com
+par exemple: alertnotify=echo %%s | mail -s &quot;Alerte RainbowLite&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3132,13 +3134,13 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte LiteCoinUltra&quot; adm
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  LiteCoinUltra is probably already running.</source>
-        <translation>Echec lors de la tentative de verrou des données du répertoire %s. L&apos;application LiteCoinUltra est probablement déjà en cours d&apos;exécution</translation>
+        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
+        <translation>Echec lors de la tentative de verrou des données du répertoire %s. L&apos;application RainbowLite est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3172,13 +3174,13 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte LiteCoinUltra&quot; adm
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of LiteCoinUltra</source>
-        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application LiteCoinUltra</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
+        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application RainbowLite</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart LiteCoinUltra to complete</source>
-        <translation>Le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application LiteCoinUltra</translation>
+        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
+        <translation>Le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application RainbowLite</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3247,8 +3249,8 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte LiteCoinUltra&quot; adm
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. LiteCoinUltra is probably already running.</source>
-        <translation>Connexion au port %s impossible. L&apos;application LiteCoinUltra est probablement déjà en cours d&apos;exécution</translation>
+        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
+        <translation>Connexion au port %s impossible. L&apos;application RainbowLite est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -3,19 +3,20 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About LiteCoinUltra</source>
-        <translation>LiteCoinUltra Hakkında</translation>
+        <source>About RainbowLite</source>
+        <translation>RainbowLite Hakkında</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;LiteCoinUltra&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;LiteCoinUltra&lt;/b&gt; versiyonu</translation>
+        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;RainbowLite&lt;/b&gt; versiyonu</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers</source>
+Copyright © 2014 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -63,8 +64,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your LiteCoinUltra addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için LiteCoinUltra adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
+        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için RainbowLite adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -78,8 +79,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a LiteCoinUltra address</source>
-        <translation>Bir LiteCoinUltra adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
+        <source>Sign a message to prove you own a RainbowLite address</source>
+        <translation>Bir RainbowLite adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -93,8 +94,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified LiteCoinUltra address</source>
-        <translation>Mesajın, belirli bir LiteCoinUltra adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
+        <translation>Mesajın, belirli bir RainbowLite adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -261,8 +262,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>LiteCoinUltra will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>LiteCoinUltra, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
+        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>RainbowLite, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -375,8 +376,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about LiteCoinUltra</source>
-        <translation>LiteCoinUltra hakkındaki bilgiyi göster</translation>
+        <source>Show information about RainbowLite</source>
+        <translation>RainbowLite hakkındaki bilgiyi göster</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -425,13 +426,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a LiteCoinUltra address</source>
-        <translation>Bir LiteCoinUltra adresine coin gönder</translation>
+        <source>Send coins to a RainbowLite address</source>
+        <translation>Bir RainbowLite adresine coin gönder</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for LiteCoinUltra</source>
-        <translation>LiteCoinUltra yapılandırma seçeneklerini değiştir</translation>
+        <source>Modify configuration options for RainbowLite</source>
+        <translation>RainbowLite yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -470,8 +471,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-200"/>
-        <source>LiteCoinUltra</source>
-        <translation>LiteCoinUltra</translation>
+        <source>RainbowLite</source>
+        <translation>RainbowLite</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -480,8 +481,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About LiteCoinUltra</source>
-        <translation>LiteCoinUltra &amp;Hakkında</translation>
+        <source>&amp;About RainbowLite</source>
+        <translation>RainbowLite &amp;Hakkında</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -537,13 +538,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>LiteCoinUltra client</source>
-        <translation>LiteCoinUltra istemcisi</translation>
+        <source>RainbowLite client</source>
+        <translation>RainbowLite istemcisi</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to LiteCoinUltra network</source>
-        <translation><numerusform>LiteCoinUltra ağına %n etkin bağlantı</numerusform><numerusform>LiteCoinUltra ağına %n etkin bağlantı</numerusform></translation>
+        <source>%n active connection(s) to RainbowLite network</source>
+        <translation><numerusform>RainbowLite ağına %n etkin bağlantı</numerusform><numerusform>RainbowLite ağına %n etkin bağlantı</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -657,8 +658,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid LiteCoinUltra address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamadı! Bu, geçersiz bir LiteCoinUltra adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamadı! Bu, geçersiz bir RainbowLite adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -717,8 +718,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. LiteCoinUltra can no longer continue safely and will quit.</source>
-        <translation>Önemli bir hata oluştu. LiteCoinUltra artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
+        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
+        <translation>Önemli bir hata oluştu. RainbowLite artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
     </message>
 </context>
 <context>
@@ -1051,8 +1052,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid LiteCoinUltra address.</source>
-        <translation>Girilen %1 adresi, geçerli bir LiteCoinUltra adresi değildir.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
+        <translation>Girilen %1 adresi, geçerli bir RainbowLite adresi değildir.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1070,8 +1071,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>LiteCoinUltra-Qt</source>
-        <translation>LiteCoinUltra-Qt</translation>
+        <source>RainbowLite-Qt</source>
+        <translation>RainbowLite-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1143,13 +1144,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start LiteCoinUltra after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra LiteCoinUltra&apos;i otomatik olarak başlat</translation>
+        <source>Automatically start RainbowLite after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra RainbowLite&apos;i otomatik olarak başlat</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start LiteCoinUltra on system login</source>
-        <translation>Sisteme girişte LiteCoinUltra&apos;i &amp;başlat</translation>
+        <source>&amp;Start RainbowLite on system login</source>
+        <translation>Sisteme girişte RainbowLite&apos;i &amp;başlat</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1168,8 +1169,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the LiteCoinUltra client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticide LiteCoinUltra istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
+        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticide RainbowLite istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1178,8 +1179,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the LiteCoinUltra network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>LiteCoinUltra ağına bir SOCKS vekil sunucusu yoluyla bağlan (örn. Tor yoluyla bağlanıldığında)</translation>
+        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>RainbowLite ağına bir SOCKS vekil sunucusu yoluyla bağlan (örn. Tor yoluyla bağlanıldığında)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,8 +1254,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, LiteCoinUltra yeniden başlatıldığında etkin olacaktır.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
+        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, RainbowLite yeniden başlatıldığında etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1268,8 +1269,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show LiteCoinUltra addresses in the transaction list or not.</source>
-        <translation>LiteCoinUltra adresinin işlem listesinde gösterilmesi veya gösterilmemesi</translation>
+        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
+        <translation>RainbowLite adresinin işlem listesinde gösterilmesi veya gösterilmemesi</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1315,8 +1316,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting LiteCoinUltra.</source>
-        <translation>Bu ayar, LiteCoinUltra&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
+        <source>This setting will take effect after restarting RainbowLite.</source>
+        <translation>Bu ayar, RainbowLite&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1334,8 +1335,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LiteCoinUltra network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak LiteCoinUltra ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak RainbowLite ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1550,8 +1551,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the LiteCoinUltra-Qt help message to get a list with possible LiteCoinUltra command-line options.</source>
-        <translation>Muhtemel LiteCoinUltra komut satırı seçeneklerinin bir listesini getirmek için LiteCoinUltra-Qt yardım mesajını göster</translation>
+        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
+        <translation>Muhtemel RainbowLite komut satırı seçeneklerinin bir listesini getirmek için RainbowLite-Qt yardım mesajını göster</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,13 +1571,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>LiteCoinUltra - Debug window</source>
-        <translation>LiteCoinUltra - Hata ayıklama penceresi</translation>
+        <source>RainbowLite - Debug window</source>
+        <translation>RainbowLite - Hata ayıklama penceresi</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>LiteCoinUltra Core</source>
-        <translation>LiteCoinUltra Core</translation>
+        <source>RainbowLite Core</source>
+        <translation>RainbowLite Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1585,8 +1586,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the LiteCoinUltra debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>LiteCoinUltra hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>RainbowLite hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1595,8 +1596,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the LiteCoinUltra RPC console.</source>
-        <translation>LiteCoinUltra RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the RainbowLite RPC console.</source>
+        <translation>RainbowLite RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1754,8 +1755,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir LiteCoinUltra adresi gir (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir RainbowLite adresi gir (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1854,8 +1855,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid LiteCoinUltra address</source>
-        <translation>UYARI: Geçersiz LiteCoinUltra adresi</translation>
+        <source>WARNING: Invalid RainbowLite address</source>
+        <translation>UYARI: Geçersiz RainbowLite adresi</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1928,8 +1929,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir LiteCoinUltra adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir RainbowLite adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1989,8 +1990,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this LiteCoinUltra address</source>
-        <translation>Bu LiteCoinUltra adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
+        <source>Sign the message to prove you own this RainbowLite address</source>
+        <translation>Bu RainbowLite adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2021,8 +2022,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified LiteCoinUltra address</source>
-        <translation>Mesajın, belirtilen LiteCoinUltra adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
+        <translation>Mesajın, belirtilen RainbowLite adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2032,8 +2033,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a LiteCoinUltra address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir LiteCoinUltra adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir RainbowLite adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2042,8 +2043,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter LiteCoinUltra signature</source>
-        <translation>LiteCoinUltra imzası gir</translation>
+        <source>Enter RainbowLite signature</source>
+        <translation>RainbowLite imzası gir</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2613,8 +2614,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>LiteCoinUltra version</source>
-        <translation>LiteCoinUltra versiyonu</translation>
+        <source>RainbowLite version</source>
+        <translation>RainbowLite versiyonu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2623,8 +2624,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or LiteCoinUltrad</source>
-        <translation>-sunucu veya LiteCoinUltrad&apos;ye komut gönder</translation>
+        <source>Send command to -server or RainbowLited</source>
+        <translation>-sunucu veya RainbowLited&apos;ye komut gönder</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2643,13 +2644,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: LiteCoinUltra.conf)</source>
-        <translation>Konfigürasyon dosyasını belirt (varsayılan: LiteCoinUltra.conf)</translation>
+        <source>Specify configuration file (default: RainbowLite.conf)</source>
+        <translation>Konfigürasyon dosyasını belirt (varsayılan: RainbowLite.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: LiteCoinUltrad.pid)</source>
-        <translation>pid dosyasını belirt (varsayılan: LiteCoinUltra.pid)</translation>
+        <source>Specify pid file (default: RainbowLited.pid)</source>
+        <translation>pid dosyasını belirt (varsayılan: RainbowLite.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2798,8 +2799,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LiteCoinUltra will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, LiteCoinUltra düzgün çalışmayacaktır.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, RainbowLite düzgün çalışmayacaktır.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2988,24 +2989,24 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
 </source>
         <translation>%s, konfigürasyon dosyasında bir rpcpassword belirlemelisiniz:
  %s
 Aşağıdaki rastgele parolayı kullanmanız tavsiye edilir:
-rpcuser=LiteCoinUltrarpc
+rpcuser=RainbowLiterpc
 rpcpassword=%s
 (bu parolayı hatırlamanız gerekmemektedir)
 Kullanıcı adı ve parola aynı OLMAMALIDIR.
 Dosya mevcut değilse, dosyayı sadece-kullanıcı-okuyabilir dosya izniyle yaratınız.
 alertnotify ayarlamanız da ayrıca tavsiye edilir böylece sorunlar, size bildirilir;
-örneğin: alertnotify=echo %%s | mail -s &quot;LiteCoinUltra Uyarısı&quot; admin@foo.com
+örneğin: alertnotify=echo %%s | mail -s &quot;RainbowLite Uyarısı&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3130,12 +3131,12 @@ alertnotify ayarlamanız da ayrıca tavsiye edilir böylece sorunlar, size bildi
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  LiteCoinUltra is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>LiteCoinUltra</source>
+        <source>RainbowLite</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3170,12 +3171,12 @@ alertnotify ayarlamanız da ayrıca tavsiye edilir böylece sorunlar, size bildi
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of LiteCoinUltra</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart LiteCoinUltra to complete</source>
+        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3245,7 +3246,7 @@ alertnotify ayarlamanız da ayrıca tavsiye edilir böylece sorunlar, size bildi
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. LiteCoinUltra is probably already running.</source>
+        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

@@ -144,7 +144,7 @@ OBJS= \
     obj/zerocoin/SpendMetaData.o \
     obj/zerocoin/ZeroTest.o
 
-all: LiteCoinUltrad
+all: RainbowLited
 
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
@@ -157,7 +157,7 @@ obj/txdb-leveldb.o: leveldb/libleveldb.a
 # auto-generated dependencies:
 -include obj/*.P
 
-LiteCoinUltrad:: obj obj/zerocoin
+RainbowLited:: obj obj/zerocoin
 
 obj obj/zerocoin:
 	mkdir -p $@
@@ -190,11 +190,11 @@ obj/zerocoin/%.o: zerocoin/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-LiteCoinUltrad:: $(OBJS:obj/%=obj/%)
+RainbowLited:: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f LiteCoinUltrad
+	-rm -f RainbowLited
 	-rm -f obj/*.o
 	-rm -f obj/zerocoin/*.o
 	-rm -f obj/*.P
