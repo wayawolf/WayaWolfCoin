@@ -10,7 +10,7 @@ CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += widgets
 CONFIG += static
-# CONFIG += c++11
+CONFIG += c++11
 
 QMAKE_CXXFLAGS += -fpermissive
 
