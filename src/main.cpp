@@ -1012,13 +1012,6 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
     return pblockOrphan->hashPrevBlock;
 }
 
-int static generateMTRandom(unsigned int s, int range)
-{
-    random::mt19937 gen(s);
-    random::uniform_int_distribution<> dist(0, range);
-    return dist(gen);
-}
-
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees, uint256 prevHash)
 {
