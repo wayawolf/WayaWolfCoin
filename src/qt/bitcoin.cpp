@@ -141,12 +141,6 @@ int main(int argc, char *argv[])
         return 1;
     }
     ReadConfigFile(mapArgs, mapMultiArgs);
-    // Add Daemon config settings - Also gets us connected for initial launch (before config file takes effect)
-    mapMultiArgs["-addnode"].push_back("193.110.114.187:10665");
-    mapMultiArgs["-addnode"].push_back("109.87.46.50:10665");
-    mapMultiArgs["-addnode"].push_back("84.200.210.70:10665");
-    mapMultiArgs["-addnode"].push_back("114.215.133.167:10665");
-
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     app.setOrganizationName("RainbowLite");
