@@ -58,7 +58,7 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 static const int64_t COIN_YEAR_REWARD = 100 * CENT;
 
 static const int64_t COIN_POW_REWARD = 25 * COIN;
-static const int64_t COIN_POW_PREMINE = 100000000 * COIN; // 100M
+static const int64_t COIN_POW_PREMINE = 250000000 * COIN; // 250M
 
 static const int64_t POS_START_BLOCK = 1;
 
