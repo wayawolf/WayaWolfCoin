@@ -100,7 +100,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
             //
             // Debit
             //
-            int64_t nTxFee = nDebit - wtx.GetValueOut();
+            int64_t nTxFee = nDebit - (wtx.GetValueOut() - wtx.GetBurnedValue());
 
             for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++)
             {

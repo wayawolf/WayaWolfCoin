@@ -697,7 +697,9 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
     if (nDebit > 0) // debit>0 means we signed/sent this transaction
     {
         int64_t nValueOut = GetValueOut();
-        nFee = nDebit - nValueOut;
+        nFee = nDebit - (nValueOut + GetBurnedValue());
+        printf("OutValue: %" PRId64 ", fee: %" PRId64 ", burned: %" PRId64 "\n",
+               nValueOut, nFee, GetBurnedValue());
     }
 
     // Sent/received.
@@ -934,6 +936,10 @@ void CWallet::ReacceptWalletTransactions()
 
 void CWalletTx::RelayWalletTransaction(CTxDB& txdb)
 {
+#ifdef NO_RELAY_TX
+    printf("I refuse to relay txes.  Screw you.\n");
+    return;
+#endif
     BOOST_FOREACH(const CMerkleTx& tx, vtxPrev)
     {
         if (!(tx.IsCoinBase() || tx.IsCoinStake()))

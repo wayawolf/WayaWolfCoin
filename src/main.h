@@ -568,6 +568,20 @@ public:
         return nValueOut;
     }
 
+    int64_t GetBurnedValue() const
+    {
+        int64_t nValueOut = 0;
+        BOOST_FOREACH(const CTxOut& txout, vout)
+        {
+            // 6a - OP_RETURN, used to burn coin
+            if (!txout.IsEmpty() && txout.scriptPubKey[0] == 0x6A)
+                nValueOut += txout.nValue;
+            if (!MoneyRange(txout.nValue) || !MoneyRange(nValueOut))
+                throw std::runtime_error("CTransaction::GetValueOut() : value out of range");
+        }
+        return nValueOut;
+    }
+
     /** Amount of bitcoins coming in to this transaction
         Note that lightweight clients may not know anything besides the hash of previous transactions,
         so may not be able to calculate this.
