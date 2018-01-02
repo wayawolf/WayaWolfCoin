@@ -2341,7 +2341,8 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
         mapOrphanBlocksByPrev.erase(hashPrev);
     }
 
-    printf("ProcessBlock: ACCEPTED %s\n", IsProofOfWork() ? "proof-of-work" : "proof-of-stake");
+    printf("ProcessBlock: ACCEPTED %s\n",
+           pblock->IsProofOfWork() ? "proof-of-work" : "proof-of-stake");
 
     // ppcoin: if responsible for sync-checkpoint send it
     if (pfrom && !CSyncCheckpoint::strMasterPrivKey.empty())
