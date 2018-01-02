@@ -33,6 +33,7 @@ CCriticalSection cs_main;
 
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
+bool nDoGenesis = false;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
@@ -42,10 +43,14 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 5 * 60; // 5 minute
-unsigned int nStakeMinAge = 10 * 60 * 60; // 10h
-unsigned int nStakeMaxAge = -1; // unlimited
-unsigned int nModifierInterval = 1.38 * 60 * 60; // time to elapse before new modifier is computed 1000 blocks
+unsigned int nTargetSpacing = 60;
+static const int64_t nMaxAdjustUp = 25;
+static const int64_t nMaxAdjustDown = 50;
+static const int64_t nAdjustAmplitude = 25;
+
+unsigned int nStakeMinAge = 3 * 24 * 60 * 60;
+unsigned int nStakeMaxAge = -1;
+unsigned int nModifierInterval = 10 * 60;
 
 int nCoinbaseMaturity = 10;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -1009,27 +1014,11 @@ int static generateMTRandom(unsigned int s, int range)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees, uint256 prevHash)
 {
-    // Superblock calculations PoW
-    std::string cseed_str = prevHash.ToString().substr(7,7);
-    const char* cseed = cseed_str.c_str();
-    long seed = hex2long(cseed);
-    int rand1 = generateMTRandom(seed, 1000000);
-
-    int64_t nSubsidy = 100 * COIN;
+    int64_t nSubsidy = COIN_POW_REWARD;
 
     if(nBestHeight == 0)
     {
-        nSubsidy = 7500000 * COIN;
-    }
-    else if(nBestHeight > 9999)
-    {
-        if(rand1 <= 1000) // 1% Chance of superblock
-        nSubsidy = 1000 * COIN;
-    }
-	
-	else if(nBestHeight > 400000)
-    {
-        nSubsidy = 50 * COIN;
+        nSubsidy = COIN_POW_PREMINE;
     }
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -1042,36 +1031,17 @@ int64_t GetProofOfWorkReward(int64_t nFees, uint256 prevHash)
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, uint256 prevHash)
 
 {
-    // Superblock calculations PoS
-    //std::string cseed_str = prevHash.ToString().substr(7,7);
-    //const char* cseed = cseed_str.c_str();
-    //long seed = hex2long(cseed);
-    //int rand1 = generateMTRandom(seed, 1000000);
+    int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
 
-    int64_t nSubsidy = 0 * COIN;
-		
-    if(nBestHeight == 584)
-        nSubsidy = 1;
+    if(nBestHeight <= POS_START_BLOCK)
+	return 0;
 
-    if(nBestHeight == 644)
-        nSubsidy = 1;
-
-    if(nBestHeight > 200000)
-	nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
-    else if(nBestHeight > 400000)
-        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) / 2;
-	
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRId64 "\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
     return nSubsidy + nFees;
 }
 
-
-
-
-
-static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
 
 //
 // maximum nBits value could possible be required nTime after
@@ -1119,81 +1089,58 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
     return pindex;
 }
 
-static unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofOfStake)
+// From Netcoin: Digishield inspired difficulty algorithm
+//  Digibyte code was simplified and reduced by assuming nInterval==1
+//  added fProofOfStake to selectively locate last two blocks of the requested
+//  type for the time comparison.
+unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
     CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
 
-    if (pindexLast == NULL)
-        return bnTargetLimit.GetCompact(); // genesis block
-
+    // find the previous 2 blocks of the requested type (either POS or POW)
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
-    if (pindexPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // first block
+
+    // Genesis block,  or first POS block not yet mined
+    if (pindexPrev == NULL)
+        return bnTargetLimit.GetCompact();
+
+    // is there another block of the correct type prior to pindexPrev?
     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-    if (pindexPrevPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // second block
+    if (pindexPrevPrev == NULL)
+        pindexPrevPrev = pindexPrev;
 
-    int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
+    // netcoin POW and POS blocks each separately retarget to 2 minutes,
+    // giving 1 minute overall average block target time.
+    int64_t retargetTimespan = nTargetSpacing * 2;
+    int64_t lowerLimit = retargetTimespan * (100 - nMaxAdjustUp) / 100;
+    int64_t upperLimit = retargetTimespan * (100 + nMaxAdjustDown) / 100;
 
-    // ppcoin: target change every block
-    // ppcoin: retarget with exponential moving toward target spacing
+    int64_t nActualTimespan = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
+
+    // amplitude filter - weight the adjustment
+    nActualTimespan = retargetTimespan + nAdjustAmplitude * (nActualTimespan - retargetTimespan) / 100;
+
+    // Clamp the value between [75%, 150%] of retargetTimespan
+    nActualTimespan = max(nActualTimespan, lowerLimit);
+    nActualTimespan = min(nActualTimespan, upperLimit);
+
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
-    int64_t nInterval = nTargetTimespan / nTargetSpacing;
-    bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
-    bnNew /= ((nInterval + 1) * nTargetSpacing);
+    bnNew *= nActualTimespan;
+    bnNew /= retargetTimespan;
 
-    if (bnNew > bnTargetLimit)
+    if (bnNew <= 0 || bnNew > bnTargetLimit) {
+	printf("bnNew: %08X > bnTargetLimit: %08X, resetting\n",
+	       bnNew.GetCompact(), bnTargetLimit.GetCompact());
         bnNew = bnTargetLimit;
-
-    return bnNew.GetCompact();
-}
-
-static unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofOfStake)
-{
-    CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
-
-    if (pindexLast == NULL)
-        return bnTargetLimit.GetCompact(); // genesis block
-
-    // fix difficulty for moving chain again
-    if (pindexLast->nHeight == 7749)
-        return bnTargetLimit.GetCompact();  
-
-    const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
-    if (pindexPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // first block
-    const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-    if (pindexPrevPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // second block
-
-
-    int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
-    if (nActualSpacing < 0)
-        nActualSpacing = nTargetSpacing;
-
-    // ppcoin: target change every block
-    // ppcoin: retarget with exponential moving toward target spacing
-    CBigNum bnNew;
-    bnNew.SetCompact(pindexPrev->nBits);
-    int64_t nInterval = nTargetTimespan / nTargetSpacing;
-    bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
-    bnNew /= ((nInterval + 1) * nTargetSpacing);
-
-
-    if (bnNew <= 0 || bnNew > bnTargetLimit)
-        bnNew = bnTargetLimit;
-
+    }
 
     return bnNew.GetCompact();
 }
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if (pindexLast->nHeight < 7748)
-        return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
-    else
-        return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
+    return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
@@ -1935,7 +1882,7 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
 // ppcoin: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
-// might not find out about their coin age. Older transactions are 
+// might not find out about their coin age. Older transactions are
 // guaranteed to be in main chain by sync-checkpoint. This rule is
 // introduced to help nodes establish a consistent view of the coin
 // age (trust score) of competing branches.
@@ -2181,8 +2128,10 @@ bool CBlock::AcceptBlock()
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
 
+#if 0
     if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+#endif
 
     // Check proof-of-work or proof-of-stake
     if (nBits != GetNextTargetRequired(pindexPrev, IsProofOfStake()))
@@ -2383,7 +2332,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
         mapOrphanBlocksByPrev.erase(hashPrev);
     }
 
-    printf("ProcessBlock: ACCEPTED\n");
+    printf("ProcessBlock: ACCEPTED %s\n", IsProofOfWork() ? "proof-of-work" : "proof-of-stake");
 
     // ppcoin: if responsible for sync-checkpoint send it
     if (pfrom && !CSyncCheckpoint::strMasterPrivKey.empty())
@@ -2610,31 +2559,31 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1501085783;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = !fTestNet ? 584555 : 584555 ;
-        
-    if (true  && (block.GetHash() != hashGenesisBlock)) {
 
-                // This will figure out a valid hash and Nonce if you're
-                // creating a different genesis block:
-                    uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-                    while (block.GetHash() > hashTarget)
-                       {
-                           ++block.nNonce;
-                           if (block.nNonce == 0)
-                           {
-                               printf("NONCE WRAPPED, incrementing time");
-                               ++block.nTime;
-                           }
-                       }
+    if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
+        // This will figure out a valid hash and Nonce if you're
+        // creating a different genesis block:
+            uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+            while (block.GetHash() > hashTarget)
+            {
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time");
+                    ++block.nTime;
+                }
+            }
         }
 
         //// debug print
         block.print();
-        
+
         printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
         printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
-            
+	fflush(NULL);
+
         assert(block.hashMerkleRoot == uint256("0x41e77563a5b422f76238f6da60e2bc4e1a8b2f5c807b4622ec3a348a3a1e81cf"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
@@ -2719,14 +2668,14 @@ void PrintBlockTree()
         CBlock block;
         block.ReadFromDisk(pindex);
         printf("%d (%u,%u) %s  %08x  %s  mint %7s  tx %" PRIszu,
-            pindex->nHeight,
-            pindex->nFile,
-            pindex->nBlockPos,
-            block.GetHash().ToString().c_str(),
-            block.nBits,
-            DateTimeStrFormat("%x %H:%M:%S", block.GetBlockTime()).c_str(),
-            FormatMoney(pindex->nMint).c_str(),
-            block.vtx.size());
+               pindex->nHeight,
+               pindex->nFile,
+               pindex->nBlockPos,
+               block.GetHash().ToString().c_str(),
+               block.nBits,
+               DateTimeStrFormat("%x %H:%M:%S", block.GetBlockTime()).c_str(),
+               FormatMoney(pindex->nMint).c_str(),
+               block.vtx.size());
 
         PrintWallets(block);
 
@@ -3205,7 +3154,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
                     if (inv.hash == pfrom->hashContinue)
                     {
                         // ppcoin: send latest proof-of-work block to allow the
-                        // download node to accept as orphan (proof-of-stake 
+                        // download node to accept as orphan (proof-of-stake
                         // block might be rejected by stake connection check)
                         vector<CInv> vInv;
                         vInv.push_back(CInv(MSG_BLOCK, GetLastBlockIndex(pindexBest, false)->GetBlockHash()));
