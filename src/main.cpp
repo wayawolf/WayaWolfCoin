@@ -2549,7 +2549,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "RainbowLite V1.3 26-07-2017 6.21";
         CTransaction txNew;
-        txNew.nTime = 1501085783;
+        txNew.nTime = 1514868443;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2559,13 +2559,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1501085783;
+        block.nTime    = 1514868443;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 584555 : 584555 ;
+        block.nNonce   = !fTestNet ? 0 : 0;
 
-    if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
-        // This will figure out a valid hash and Nonce if you're
-        // creating a different genesis block:
+        if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
+            // This will figure out a valid hash and Nonce if you're
+            // creating a different genesis block:
             uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
             while (block.GetHash() > hashTarget)
             {
