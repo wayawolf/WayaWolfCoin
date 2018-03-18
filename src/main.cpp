@@ -696,7 +696,6 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CTransaction &tx,
 
 	if (nBurned) {
 	    printf("CTxMemPool::accept() : Detected burned coins : %" PRId64 "\n", nBurned);
-	    nFees -= nBurned;
 	}
 
         // Don't accept it if it can't get into a block
