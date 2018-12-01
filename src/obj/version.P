@@ -1,4 +1,4 @@
 obj/version.o: version.cpp version.h clientversion.h \
- /tmp/custom/wayawolfcoin-source/src/obj/build.h
+ /home/user/aaa-lab/wayawolfcoin-lab/src/obj/build.h
 version.cpp version.h clientversion.h :
- /tmp/custom/wayawolfcoin-source/src/obj/build.h :
+ /home/user/aaa-lab/wayawolfcoin-lab/src/obj/build.h :
