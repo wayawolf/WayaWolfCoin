@@ -46,7 +46,7 @@ namespace Checkpoints
 
     static MapCheckpoints mapCheckpointsTestnet =
         boost::assign::map_list_of
-        (  0, hashGenesisBlockTestNet )
+        (  0, hashGenesisBlock )
         ;
     static const CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
