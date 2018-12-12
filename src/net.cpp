@@ -1176,9 +1176,10 @@ static const char *strMainNetDNSSeed[][2] = {
     {"jjwtreasures1.ddns.net", "jjwtreasures1.ddns.net"},
     {"186.19.66.191", "186.19.66.191"},
     {"83.138.195.42", "83.138.195.42"},
-    {"Nerd-Lab-Net", "159.203.92.66"},
-    {"Nerd-Lab-Net", "178.128.40.35"},
-    {"Nerd-Lab-Net", "206.189.33.55"},
+    {"Lab-Node", "139.59.209.222"},
+    {"Lab-Node", "206.189.33.55"},
+    {"Lab-Node", "68.183.174.216"},
+    {"Lab-Node", "159.203.92.66"},
     {NULL, NULL}
 };
 
