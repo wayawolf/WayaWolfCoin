@@ -166,6 +166,8 @@ leveldb/libleveldb.a:
 	mkdir -p leveldb/build && \
 		cd leveldb/build && \
 		cmake -DCMAKE_TOOLCHAIN_FILE=../cross-compilation.cmake \
+			-DCMAKE_CROSSCOMPILING=1 -DRUN_HAVE_STD_REGEX=0 \
+			-DRUN_HAVE_POSIX_REGEX=0 \
 			-DCMAKE_BUILD_TYPE=Release .. && \
 		cmake --build . && \
 		cp libleveldb.a ..
