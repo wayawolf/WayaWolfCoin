@@ -145,6 +145,8 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
 }
 
+DEFINES += -DBOOST_BIND_GLOBAL_PLACEHOLDERS
+
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers
 LIBS += $$PWD/src/leveldb/libleveldb.a
 SOURCES += src/txdb-leveldb.cpp
