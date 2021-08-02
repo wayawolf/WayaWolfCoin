@@ -51,9 +51,9 @@ endif
 
 LIBS+= \
  -Wl,-B$(LMODE2) \
-   -l z \
-   -l dl \
-   -l pthread
+   -lz \
+   -ldl \
+   -lpthread
 
 
 # Hardening
@@ -89,6 +89,8 @@ LIBS+= \
     HARDENING+=-D_FORTIFY_SOURCE=2
 #
 
+
+    HARDENING+=-fno-rtti
 
 DEBUGFLAGS=-g
 
