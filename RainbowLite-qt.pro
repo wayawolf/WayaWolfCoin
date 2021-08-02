@@ -146,11 +146,11 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
 }
 
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers
-LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
+LIBS += $$PWD/src/leveldb/libleveldb.a
 SOURCES += src/txdb-leveldb.cpp
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
-    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
+    genleveldb.commands = mkdir -p $$PWD/src/leveldb/build && cd $$PWD/src/leveldb/build && CC=$$QMAKE_CC CXX=$$QMAKE_CXX OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" cmake -DCMAKE_TOOLCHAIN_FILE=../cross-compilation.cmake \ -DCMAKE_CROSSCOMPILING=1 -DRUN_HAVE_STD_REGEX=0 -DRUN_HAVE_POSIX_REGEX=0 -DCMAKE_BUILD_TYPE=Release .. && cmake --build . && cp libleveldb.a ..
 } else {
     # make an educated guess about what the ranlib command is called
     isEmpty(QMAKE_RANLIB) {
