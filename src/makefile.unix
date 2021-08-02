@@ -155,7 +155,7 @@ OBJS= \
 
 all: RainbowLited
 
-LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
+LIBS += $(CURDIR)/leveldb/libleveldb.a
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/helpers)
 OBJS += obj/txdb-leveldb.o
@@ -165,7 +165,7 @@ leveldb/libleveldb.a:
 		cd leveldb/build && \
 		cmake -DCMAKE_BUILD_TYPE=Release .. && \
 		cmake --build . && \
-		cp libleveldb.a libmemenv.a ../..
+		cp libleveldb.a ..
 obj/txdb-leveldb.o: leveldb/libleveldb.a
 
 # auto-generated dependencies:
