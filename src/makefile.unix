@@ -90,7 +90,7 @@ LIBS+= \
 #
 
 
-    HARDENING+=-fno-rtti
+    HARDENING+=-frtti
 
 DEBUGFLAGS=-g
 
