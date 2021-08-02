@@ -2,9 +2,11 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+CC := ${CROSS_PREFIX}gcc
 CXX := ${CROSS_PREFIX}g++
 LD := ${CROSS_PREFIX}ld
 AR := ${CROSS_PREFIX}ar
+export CC CXX LD AR
 
 USE_UPNP:=0
 
