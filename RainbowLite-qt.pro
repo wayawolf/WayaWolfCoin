@@ -31,20 +31,6 @@ OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
 
-win32{
-BOOST_LIB_SUFFIX=-mgw62-mt-s-1_57
-BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
-BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
-BDB_INCLUDE_PATH=C:/deps/db-6.1.26.NC/build_unix
-BDB_LIB_PATH=C:/deps/db-6.1.26.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1u/include
-OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1u
-MINIUPNPC_INCLUDE_PATH=C:/deps/
-MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
-QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
-}
-
 build_macosx64 {
     QMAKE_TARGET_BUNDLE_PREFIX = co.okcash
     BOOST_LIB_SUFFIX=-mt
@@ -159,7 +145,7 @@ SOURCES += src/txdb-leveldb.cpp
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
     }
     LIBS += -lshlwapi
-    # genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+    genleveldb.commands = mkdir -p $$PWD/src/leveldb/build && cd $$PWD/src/leveldb/build && CC=$$QMAKE_CC CXX=$$QMAKE_CXX OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" cmake -DCMAKE_TOOLCHAIN_FILE=../cross-compilation.cmake \ -DCMAKE_CROSSCOMPILING=1 -DRUN_HAVE_STD_REGEX=0 -DRUN_HAVE_POSIX_REGEX=0 -DCMAKE_BUILD_TYPE=Release .. && cmake --build . && cp libleveldb.a ..
 }
 genleveldb.target = $$PWD/src/leveldb/libleveldb.a
 genleveldb.depends = FORCE
@@ -398,8 +384,7 @@ CODECFORTR = UTF-8
 TRANSLATIONS = $$files(src/qt/locale/bitcoin_*.ts)
 
 isEmpty(QMAKE_LRELEASE) {
-    win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
-    else:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
+    QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
 }
 isEmpty(QM_DIR):QM_DIR = $$PWD/src/qt/locale
 # automatically build translations, so they can be included in resource file
@@ -477,6 +462,7 @@ LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 # -lgdi32 has to happen after -lcrypto (see  #681)
 windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32 -luuid -lgdi32
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
+# windows:LIBS += -lboost_thread_win32$$BOOST_THREAD_LIB_SUFFIX
 LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX -lrt
 
 contains(RELEASE, 1) {
