@@ -145,7 +145,7 @@ SOURCES += src/txdb-leveldb.cpp
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
     }
     LIBS += -lshlwapi
-    genleveldb.commands = mkdir -p $$PWD/src/leveldb/build && cd $$PWD/src/leveldb/build && CC=$$QMAKE_CC CXX=$$QMAKE_CXX OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" cmake -DCMAKE_TOOLCHAIN_FILE=../cross-compilation.cmake \ -DCMAKE_CROSSCOMPILING=1 -DRUN_HAVE_STD_REGEX=0 -DRUN_HAVE_POSIX_REGEX=0 -DCMAKE_BUILD_TYPE=Release .. && cmake --build . && cp libleveldb.a ..
+    genleveldb.commands = mkdir -p $$PWD/src/leveldb/build && cd $$PWD/src/leveldb/build && CC=$$QMAKE_CC CXX=$$QMAKE_CXX OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" cmake -DWIN32 -DCMAKE_TOOLCHAIN_FILE=../cross-compilation.cmake \ -DCMAKE_CROSSCOMPILING=1 -DRUN_HAVE_STD_REGEX=0 -DRUN_HAVE_POSIX_REGEX=0 -DCMAKE_BUILD_TYPE=Release .. && cmake --build . && cp libleveldb.a ..
 }
 genleveldb.target = $$PWD/src/leveldb/libleveldb.a
 genleveldb.depends = FORCE
