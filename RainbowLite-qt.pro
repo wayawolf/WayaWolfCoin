@@ -402,7 +402,7 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mt
+    #windows:BOOST_LIB_SUFFIX = -mt
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
@@ -463,7 +463,8 @@ LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32 -luuid -lgdi32
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
 # windows:LIBS += -lboost_thread_win32$$BOOST_THREAD_LIB_SUFFIX
-LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX -lrt
+LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
+!windows:LIBS += -lrt
 
 contains(RELEASE, 1) {
     !windows:!macx {
