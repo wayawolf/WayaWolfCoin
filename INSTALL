@@ -1,0 +1,9 @@
+Building RainbowLite
+
+See doc/readme-qt.rst for instructions on building RainbowLite QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of RainbowLite.
+
+See doc/build-*.txt for instructions on building RainbowLited,
+the intended-for-services, no-graphical-interface, reference
+implementation of RainbowLite.
