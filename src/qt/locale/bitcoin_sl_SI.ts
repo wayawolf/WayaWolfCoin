@@ -3,20 +3,21 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About RainbowLite</source>
-        <translation>O RainbowLite</translation>
+        <source>About WayaWolfCoin</source>
+        <translation>O WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;RainbowLite&lt;/b&gt; verzija</translation>
+        <source>&lt;b&gt;WayaWolfCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;WayaWolfCoin&lt;/b&gt; verzija</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers
-Copyright © 2018 The RainbowLite developers</source>
+Copyright © 2017 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers
+Copyright © 2021 The WayaWolfCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -64,8 +65,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši RainbowLite naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your WayaWolfCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši WayaWolfCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -79,8 +80,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a RainbowLite address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva RainbowLite naslova</translation>
+        <source>Sign a message to prove you own a WayaWolfCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva WayaWolfCoin naslova</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +95,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim RainbowLite naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified WayaWolfCoin address</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim WayaWolfCoin naslovom</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -262,8 +263,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-58"/>
-        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>RainbowLite se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>WayaWolfCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>WayaWolfCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +377,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about RainbowLite</source>
-        <translation>Pokaži informacije o RainbowLite</translation>
+        <source>Show information about WayaWolfCoin</source>
+        <translation>Pokaži informacije o WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -426,13 +427,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a RainbowLite address</source>
-        <translation>Pošlji kovance na RainbowLite naslov</translation>
+        <source>Send coins to a WayaWolfCoin address</source>
+        <translation>Pošlji kovance na WayaWolfCoin naslov</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for RainbowLite</source>
-        <translation>Spremeni nastavitve za RainbowLite</translation>
+        <source>Modify configuration options for WayaWolfCoin</source>
+        <translation>Spremeni nastavitve za WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -471,8 +472,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-200"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -481,8 +482,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About RainbowLite</source>
-        <translation>&amp;O RainbowLite</translation>
+        <source>&amp;About WayaWolfCoin</source>
+        <translation>&amp;O WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -538,13 +539,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>RainbowLite client</source>
-        <translation>RainbowLite program</translation>
+        <source>WayaWolfCoin client</source>
+        <translation>WayaWolfCoin program</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to RainbowLite network</source>
-        <translation><numerusform>%n aktivne povezave na RainbowLite omrežje</numerusform><numerusform>%n aktivnih povezav na RainbowLite omrežje</numerusform><numerusform>%n aktivnih povezav na RainbowLite omrežje</numerusform><numerusform>%n aktivnih povezav na RainbowLite omrežje</numerusform></translation>
+        <source>%n active connection(s) to WayaWolfCoin network</source>
+        <translation><numerusform>%n aktivne povezave na WayaWolfCoin omrežje</numerusform><numerusform>%n aktivnih povezav na WayaWolfCoin omrežje</numerusform><numerusform>%n aktivnih povezav na WayaWolfCoin omrežje</numerusform><numerusform>%n aktivnih povezav na WayaWolfCoin omrežje</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -658,8 +659,8 @@ Naslov: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega RainbowLite naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid WayaWolfCoin address or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega WayaWolfCoin naslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -718,8 +719,8 @@ Naslov: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program RainbowLite se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. WayaWolfCoin can no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program WayaWolfCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -1052,8 +1053,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
-        <translation>Vneseni naslov &quot;%1&quot; ni veljaven RainbowLite naslov.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid WayaWolfCoin address.</source>
+        <translation>Vneseni naslov &quot;%1&quot; ni veljaven WayaWolfCoin naslov.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1071,8 +1072,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>RainbowLite-Qt</source>
-        <translation>RainbowLite-Qt</translation>
+        <source>WayaWolfCoin-Qt</source>
+        <translation>WayaWolfCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1144,13 +1145,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start RainbowLite after logging in to the system.</source>
-        <translation>Avtomatično zaženi RainbowLite ob zagonu sistema.</translation>
+        <source>Automatically start WayaWolfCoin after logging in to the system.</source>
+        <translation>Avtomatično zaženi WayaWolfCoin ob zagonu sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start RainbowLite on system login</source>
-        <translation>&amp;Zaženi RainbowLite ob prijavi v sistem</translation>
+        <source>&amp;Start WayaWolfCoin on system login</source>
+        <translation>&amp;Zaženi WayaWolfCoin ob prijavi v sistem</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1169,8 +1170,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za RainbowLite program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the WayaWolfCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za WayaWolfCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1179,8 +1180,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Poveži se na RainbowLite omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
+        <source>Connect to the WayaWolfCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Poveži se na WayaWolfCoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1254,8 +1255,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu RainbowLite aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WayaWolfCoin.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu WayaWolfCoin aplikacije. </translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1269,8 +1270,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
-        <translation>Izbira prikaza RainbowLite naslovov v seznamu transakcij.</translation>
+        <source>Whether to show WayaWolfCoin addresses in the transaction list or not.</source>
+        <translation>Izbira prikaza WayaWolfCoin naslovov v seznamu transakcij.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1316,8 +1317,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting RainbowLite.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu RainbowLite aplikacije</translation>
+        <source>This setting will take effect after restarting WayaWolfCoin.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu WayaWolfCoin aplikacije</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1336,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z RainbowLite omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WayaWolfCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z WayaWolfCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1551,8 +1552,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
-        <translation>Prikaži RainbowLite-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice RainbowLite aplikacije</translation>
+        <source>Show the WayaWolfCoin-Qt help message to get a list with possible WayaWolfCoin command-line options.</source>
+        <translation>Prikaži WayaWolfCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice WayaWolfCoin aplikacije</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1571,13 +1572,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>RainbowLite - Debug window</source>
-        <translation>RainbowLite - okno za odpravljanje napak</translation>
+        <source>WayaWolfCoin - Debug window</source>
+        <translation>WayaWolfCoin - okno za odpravljanje napak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>RainbowLite Core</source>
-        <translation>RainbowLite jedro</translation>
+        <source>WayaWolfCoin Core</source>
+        <translation>WayaWolfCoin jedro</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1586,8 +1587,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri RainbowLite datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the WayaWolfCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri WayaWolfCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1596,8 +1597,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the RainbowLite RPC console.</source>
-        <translation>Dobrodošli v RainbowLite RPC konzoli.</translation>
+        <source>Welcome to the WayaWolfCoin RPC console.</source>
+        <translation>Dobrodošli v WayaWolfCoin RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1755,8 +1756,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite RainbowLite naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite WayaWolfCoin naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1855,8 +1856,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid RainbowLite address</source>
-        <translation>OPOZORILO: Neveljaven RainbowLite naslov</translation>
+        <source>WARNING: Invalid WayaWolfCoin address</source>
+        <translation>OPOZORILO: Neveljaven WayaWolfCoin naslov</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1929,8 +1930,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite RainbowLite naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite WayaWolfCoin naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1990,8 +1991,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this RainbowLite address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva RainbowLite naslova</translation>
+        <source>Sign the message to prove you own this WayaWolfCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva WayaWolfCoin naslova</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2022,8 +2023,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim RainbowLite naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified WayaWolfCoin address</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim WayaWolfCoin naslovom</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2033,8 +2034,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite RainbowLite naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite WayaWolfCoin naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2043,8 +2044,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter RainbowLite signature</source>
-        <translation>Vnesite RainbowLite podpis</translation>
+        <source>Enter WayaWolfCoin signature</source>
+        <translation>Vnesite WayaWolfCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2614,8 +2615,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>RainbowLite version</source>
-        <translation>RainbowLite različica</translation>
+        <source>WayaWolfCoin version</source>
+        <translation>WayaWolfCoin različica</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2624,7 +2625,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or RainbowLited</source>
+        <source>Send command to -server or WayaWolfCoind</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2644,13 +2645,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: RainbowLite.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: RainbowLite.conf)</translation>
+        <source>Specify configuration file (default: WayaWolfCoin.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: WayaWolfCoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: RainbowLited.pid)</source>
-        <translation>Določi pid datoteko (privzeto: RainbowLite.pid)</translation>
+        <source>Specify pid file (default: WayaWolfCoind.pid)</source>
+        <translation>Določi pid datoteko (privzeto: WayaWolfCoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2799,8 +2800,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
-        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno RainbowLite ne bo deloval.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong WayaWolfCoin will not work properly.</source>
+        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno WayaWolfCoin ne bo deloval.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2989,24 +2990,24 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, nastaviti morate rpcgeslo v konfiguracijski datoteki: 
  %s
 Priporočeno je, da uporabite naslednje naključno geslo:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (tega gesla si vam ni potrebno zapomniti)
 Uporabniško ime in geslo NE SMETA biti ista. 
 Če datoteka ne obstaja, jo ustvarite z lastniškimi dovoljenji za datoteke. 
 Prav tako je priporočeno, da nastavite alernotify, tkako da vas opozori na probleme;
-na primer: alertnotify=echo %%s | mail -s &quot;RainbowLite Alarm&quot; admin@foo.com
+na primer: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alarm&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3131,13 +3132,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;RainbowLite Alarm&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
-        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija RainbowLite je verjetno že zagnana.</translation>
+        <source>Cannot obtain a lock on data directory %s.  WayaWolfCoin is probably already running.</source>
+        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija WayaWolfCoin je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3171,13 +3172,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;RainbowLite Alarm&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo RainbowLite</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of WayaWolfCoin</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite RainbowLite za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart WayaWolfCoin to complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite WayaWolfCoin za dokončanje</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3246,8 +3247,8 @@ na primer: alertnotify=echo %%s | mail -s &quot;RainbowLite Alarm&quot; admin@fo
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča RainbowLite aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. WayaWolfCoin is probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča WayaWolfCoin aplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -1,5 +1,6 @@
-RainbowLite 0.4.4 BETA
+WayaWolfCoin 0.4.4 BETA
 
+Copyright (c) 2021 WayaWolfCoin Developers
 Copyright (c) 2018 RainbowLite Developers
 Copyright (c) 2013 NovaCoin Developers
 Copyright (c) 2011-2013 PPCoin Developers
@@ -12,8 +13,9 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-RainbowLite is a free open source project derived from Bitcoin, with
+WayaWolfCoin is a free open source project derived from Bitcoin, with
 the goal of providing a long-term energy-efficient scrypt-based crypto-currency.
-Built on the foundation of Bitcoin, PPCoin and NovaCoin, innovations such as
-proof-of-stake and scrypt help further advance the field of crypto-currency.
+Built on the foundation of Bitcoin, PPCoin, NovaCoin and RainbowLite,
+innovations such as proof-of-stake and scrypt help further advance the field
+of crypto-currency.
 

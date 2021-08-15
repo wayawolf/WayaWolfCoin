@@ -1,7 +1,7 @@
 src/*.exe
-src/RainbowLite
-src/RainbowLited
-src/test_RainbowLite
+src/WayaWolfCoin
+src/WayaWolfCoind
+src/test_WayaWolfCoin
 src/build.h
 .*.swp
 *.*~*
@@ -11,11 +11,11 @@ src/build.h
 *.o
 *.patch
 *.autosave
-.RainbowLite
+.WayaWolfCoin
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-RainbowLite-qt
+WayaWolfCoin-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

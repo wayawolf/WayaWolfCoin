@@ -3,24 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About RainbowLite</source>
-        <translation>O RainbowLitee</translation>
+        <source>About WayaWolfCoin</source>
+        <translation>O WayaWolfCoine</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
-        <translation>verzia &lt;b&gt;RainbowLiteu&lt;/b&gt;</translation>
+        <source>&lt;b&gt;WayaWolfCoin&lt;/b&gt; version</source>
+        <translation>verzia &lt;b&gt;WayaWolfCoinu&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers
-Copyright © 2018 The RainbowLite developers</source>
-        <translation>Copyright © 2009-2014 The Bitcoin developers
-Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers
-Copyright © 2018 The RainbowLite developers</translation>
+Copyright © 2017 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers
+Copyright © 2021 The WayaWolfCoin developers</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+15"/>
@@ -67,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše RainbowLite adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your WayaWolfCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše WayaWolfCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -82,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a RainbowLite address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto RainbowLite adresu</translation>
+        <source>Sign a message to prove you own a WayaWolfCoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto WayaWolfCoin adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -97,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou RainbowLite adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified WayaWolfCoin address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou WayaWolfCoin adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -265,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-58"/>
-        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>RainbowLite sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
+        <source>WayaWolfCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>WayaWolfCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -379,8 +377,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about RainbowLite</source>
-        <translation>Zobraziť informácie o RainbowLite</translation>
+        <source>Show information about WayaWolfCoin</source>
+        <translation>Zobraziť informácie o WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -429,13 +427,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a RainbowLite address</source>
-        <translation>Poslať mince na RainbowLite adresu</translation>
+        <source>Send coins to a WayaWolfCoin address</source>
+        <translation>Poslať mince na WayaWolfCoin adresu</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for RainbowLite</source>
-        <translation>Upraviť možnosti konfigurácie pre RainbowLite</translation>
+        <source>Modify configuration options for WayaWolfCoin</source>
+        <translation>Upraviť možnosti konfigurácie pre WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -474,8 +472,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-200"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -484,8 +482,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About RainbowLite</source>
-        <translation>&amp;O RainbowLite</translation>
+        <source>&amp;About WayaWolfCoin</source>
+        <translation>&amp;O WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -541,13 +539,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>RainbowLite client</source>
-        <translation>RainbowLite klient</translation>
+        <source>WayaWolfCoin client</source>
+        <translation>WayaWolfCoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to RainbowLite network</source>
-        <translation><numerusform>%n aktívne spojenie s RainbowLite sieťov</numerusform><numerusform>%n aktívnych spojení s RainbowLite sieťov</numerusform><numerusform>%n aktívnych spojení s RainbowLite sieťou</numerusform></translation>
+        <source>%n active connection(s) to WayaWolfCoin network</source>
+        <translation><numerusform>%n aktívne spojenie s WayaWolfCoin sieťov</numerusform><numerusform>%n aktívnych spojení s WayaWolfCoin sieťov</numerusform><numerusform>%n aktívnych spojení s WayaWolfCoin sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -660,8 +658,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou RainbowLite adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid WayaWolfCoin address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou WayaWolfCoin adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -720,8 +718,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. RainbowLite už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. WayaWolfCoin can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. WayaWolfCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1054,8 +1052,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou RainbowLite adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid WayaWolfCoin address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou WayaWolfCoin adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1073,8 +1071,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>RainbowLite-Qt</source>
-        <translation>RainbowLite-Qt</translation>
+        <source>WayaWolfCoin-Qt</source>
+        <translation>WayaWolfCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1146,13 +1144,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start RainbowLite after logging in to the system.</source>
-        <translation>Automaticky spustiť RainbowLite po prihlásení sa do systému.</translation>
+        <source>Automatically start WayaWolfCoin after logging in to the system.</source>
+        <translation>Automaticky spustiť WayaWolfCoin po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start RainbowLite on system login</source>
-        <translation>&amp;Spustiť RainbowLite pri prihlásení do systému</translation>
+        <source>&amp;Start WayaWolfCoin on system login</source>
+        <translation>&amp;Spustiť WayaWolfCoin pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1171,8 +1169,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta RainbowLite na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the WayaWolfCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta WayaWolfCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1181,8 +1179,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti RainbowLite cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the WayaWolfCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti WayaWolfCoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1256,8 +1254,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní RainbowLite.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WayaWolfCoin.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1271,8 +1269,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
-        <translation>Či chcete zobraziť RainbowLite adresy v zozname transakcií alebo nie.</translation>
+        <source>Whether to show WayaWolfCoin addresses in the transaction list or not.</source>
+        <translation>Či chcete zobraziť WayaWolfCoin adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1318,8 +1316,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting RainbowLite.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní RainbowLite.</translation>
+        <source>This setting will take effect after restarting WayaWolfCoin.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1337,8 +1335,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou RainbowLite po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WayaWolfCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou WayaWolfCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1553,8 +1551,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
-        <translation>Zobraziť RainbowLite-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku RainbowLite.</translation>
+        <source>Show the WayaWolfCoin-Qt help message to get a list with possible WayaWolfCoin command-line options.</source>
+        <translation>Zobraziť WayaWolfCoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1573,13 +1571,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>RainbowLite - Debug window</source>
-        <translation>RainbowLite - Ladiace okno</translation>
+        <source>WayaWolfCoin - Debug window</source>
+        <translation>WayaWolfCoin - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>RainbowLite Core</source>
-        <translation>Jadro RainbowLite</translation>
+        <source>WayaWolfCoin Core</source>
+        <translation>Jadro WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1588,8 +1586,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte RainbowLite súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the WayaWolfCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte WayaWolfCoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1598,8 +1596,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the RainbowLite RPC console.</source>
-        <translation>Vitajte v konzole RainbowLite RPC.</translation>
+        <source>Welcome to the WayaWolfCoin RPC console.</source>
+        <translation>Vitajte v konzole WayaWolfCoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1757,8 +1755,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte RainbowLite adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte WayaWolfCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1857,8 +1855,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid RainbowLite address</source>
-        <translation>UPOZORNENIE: Neplatná RainbowLite adresa</translation>
+        <source>WARNING: Invalid WayaWolfCoin address</source>
+        <translation>UPOZORNENIE: Neplatná WayaWolfCoin adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1931,8 +1929,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte RainbowLite adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte WayaWolfCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1992,8 +1990,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this RainbowLite address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto RainbowLite adresu</translation>
+        <source>Sign the message to prove you own this WayaWolfCoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto WayaWolfCoin adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2024,8 +2022,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou RainbowLite adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified WayaWolfCoin address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou WayaWolfCoin adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2035,8 +2033,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte RainbowLite adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte WayaWolfCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2045,8 +2043,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter RainbowLite signature</source>
-        <translation>Zadajte RainbowLite podpis</translation>
+        <source>Enter WayaWolfCoin signature</source>
+        <translation>Zadajte WayaWolfCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2616,8 +2614,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>RainbowLite version</source>
-        <translation>RainbowLite verzia</translation>
+        <source>WayaWolfCoin version</source>
+        <translation>WayaWolfCoin verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2626,8 +2624,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or RainbowLited</source>
-        <translation>Pošli príkaz na -server alebo RainbowLited</translation>
+        <source>Send command to -server or WayaWolfCoind</source>
+        <translation>Pošli príkaz na -server alebo WayaWolfCoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2646,13 +2644,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: RainbowLite.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: RainbowLite.conf)</translation>
+        <source>Specify configuration file (default: WayaWolfCoin.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: WayaWolfCoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: RainbowLited.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: RainbowLited.pid)</translation>
+        <source>Specify pid file (default: WayaWolfCoind.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: WayaWolfCoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2801,8 +2799,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny RainbowLite nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong WayaWolfCoin will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny WayaWolfCoin nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2991,24 +2989,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
  %s
 Je odporúčané použiť nasledujúce náhodné heslo:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (Nemusíte si pamätať toto heslo)
 Užívateľské meno a heslo nesmú byť rovnaké. 
 Ak súbor neexistuje, vytvorte ho s oprávneniami súborov vlastníkov iba na čítatanie.
 Odporúča sa tiež nastaviť alertnotify, takže budete upozornení na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com</translation>
+napríklad: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3132,13 +3130,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
-        <translation>Nemožno získať zámok na dátový adresár %s. RainbowLite už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s.  WayaWolfCoin is probably already running.</source>
+        <translation>Nemožno získať zámok na dátový adresár %s. WayaWolfCoin už pravdepodobne beží.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3172,13 +3170,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu RainbowLite</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of WayaWolfCoin</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte RainbowLite k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart WayaWolfCoin to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte WayaWolfCoin k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3247,8 +3245,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@f
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. RainbowLite je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. WayaWolfCoin is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. WayaWolfCoin je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-97"/>

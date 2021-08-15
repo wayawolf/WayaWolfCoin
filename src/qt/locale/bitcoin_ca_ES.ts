@@ -3,24 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About RainbowLite</source>
-        <translation>Sobre RainbowLite</translation>
+        <source>About WayaWolfCoin</source>
+        <translation>Sobre WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
-        <translation>versió &lt;b&gt;RainbowLite&lt;/b&gt;</translation>
+        <source>&lt;b&gt;WayaWolfCoin&lt;/b&gt; version</source>
+        <translation>versió &lt;b&gt;WayaWolfCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers
-Copyright © 2018 The RainbowLite developers</source>
-        <translation>Copyright © 2009-2014 The Bitcoin developers
-Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers
-Copyright © 2018 The RainbowLite developers</translation>
+Copyright © 2017 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers
+Copyright © 2021 The WayaWolfCoin developers</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+15"/>
@@ -62,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces de RainbowLite per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
+        <source>These are your WayaWolfCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces de WayaWolfCoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -77,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a RainbowLite address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça RainbowLite</translation>
+        <source>Sign a message to prove you own a WayaWolfCoin address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -92,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça RainbowLite especificada.</translation>
+        <source>Verify a message to ensure it was signed with a specified WayaWolfCoin address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça WayaWolfCoin especificada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -260,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>RainbowLite tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
+        <source>WayaWolfCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>WayaWolfCoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +372,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about RainbowLite</source>
-        <translation>Mostra informació sobre RainbowLite</translation>
+        <source>Show information about WayaWolfCoin</source>
+        <translation>Mostra informació sobre WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -424,13 +422,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a RainbowLite address</source>
-        <translation>Enviar monedes a una adreça RainbowLite</translation>
+        <source>Send coins to a WayaWolfCoin address</source>
+        <translation>Enviar monedes a una adreça WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for RainbowLite</source>
-        <translation>Modificar les opcions de configuració per a RainbowLite</translation>
+        <source>Modify configuration options for WayaWolfCoin</source>
+        <translation>Modificar les opcions de configuració per a WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -469,8 +467,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-200"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -479,8 +477,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About RainbowLite</source>
-        <translation>&amp;Sobre RainbowLite</translation>
+        <source>&amp;About WayaWolfCoin</source>
+        <translation>&amp;Sobre WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -536,13 +534,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>RainbowLite client</source>
-        <translation>Client RainbowLite</translation>
+        <source>WayaWolfCoin client</source>
+        <translation>Client WayaWolfCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to RainbowLite network</source>
-        <translation><numerusform>%n conexió activa a la xarxa RainbowLite</numerusform><numerusform>%n conexions actives a la xarxa RainbowLite</numerusform></translation>
+        <source>%n active connection(s) to WayaWolfCoin network</source>
+        <translation><numerusform>%n conexió activa a la xarxa WayaWolfCoin</numerusform><numerusform>%n conexions actives a la xarxa WayaWolfCoin</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -652,8 +650,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
-        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça RainbowLite no vàlida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid WayaWolfCoin address or malformed URI parameters.</source>
+        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça WayaWolfCoin no vàlida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -712,8 +710,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
-        <translation>S&apos;ha produït un error fatal. RainbowLite ja no pot continuar de forma segura i es tancarà.</translation>
+        <source>A fatal error occurred. WayaWolfCoin can no longer continue safely and will quit.</source>
+        <translation>S&apos;ha produït un error fatal. WayaWolfCoin ja no pot continuar de forma segura i es tancarà.</translation>
     </message>
 </context>
 <context>
@@ -1046,8 +1044,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
-        <translation>La direcció introduïda &quot;%1&quot; no és una adreça RainbowLite vàlida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid WayaWolfCoin address.</source>
+        <translation>La direcció introduïda &quot;%1&quot; no és una adreça WayaWolfCoin vàlida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1065,8 +1063,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>RainbowLite-Qt</source>
-        <translation>RainbowLite-Qt</translation>
+        <source>WayaWolfCoin-Qt</source>
+        <translation>WayaWolfCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1138,13 +1136,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start RainbowLite after logging in to the system.</source>
-        <translation>Inicia automàticament RainbowLite després d&apos;entrar en el sistema.</translation>
+        <source>Automatically start WayaWolfCoin after logging in to the system.</source>
+        <translation>Inicia automàticament WayaWolfCoin després d&apos;entrar en el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start RainbowLite on system login</source>
-        <translation>&amp;Iniciar RainbowLite amb l&apos;inici de sessió</translation>
+        <source>&amp;Start WayaWolfCoin on system login</source>
+        <translation>&amp;Iniciar WayaWolfCoin amb l&apos;inici de sessió</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1163,8 +1161,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir automàticament el port de client RainbowLite en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
+        <source>Automatically open the WayaWolfCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir automàticament el port de client WayaWolfCoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1173,8 +1171,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connecteu-vos a la xarxa RainbowLite través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
+        <source>Connect to the WayaWolfCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connecteu-vos a la xarxa WayaWolfCoin través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1248,8 +1246,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
-        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar RainbowLite.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WayaWolfCoin.</source>
+        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1263,8 +1261,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
-        <translation>Per mostrar RainbowLite adreces a la llista de transaccions o no.</translation>
+        <source>Whether to show WayaWolfCoin addresses in the transaction list or not.</source>
+        <translation>Per mostrar WayaWolfCoin adreces a la llista de transaccions o no.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1310,8 +1308,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting RainbowLite.</source>
-        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar RainbowLite.</translation>
+        <source>This setting will take effect after restarting WayaWolfCoin.</source>
+        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1329,8 +1327,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa RainbowLite després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WayaWolfCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa WayaWolfCoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1545,8 +1543,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
-        <translation>Mostra el missatge d&apos;ajuda de RainbowLite-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres RainbowLite.</translation>
+        <source>Show the WayaWolfCoin-Qt help message to get a list with possible WayaWolfCoin command-line options.</source>
+        <translation>Mostra el missatge d&apos;ajuda de WayaWolfCoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,13 +1563,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>RainbowLite - Debug window</source>
-        <translation>RainbowLite - Finestra Depuració</translation>
+        <source>WayaWolfCoin - Debug window</source>
+        <translation>WayaWolfCoin - Finestra Depuració</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>RainbowLite Core</source>
-        <translation>Nucli RainbowLite</translation>
+        <source>WayaWolfCoin Core</source>
+        <translation>Nucli WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1580,8 +1578,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obriu el fitxer de registre de depuració RainbowLite des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
+        <source>Open the WayaWolfCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obriu el fitxer de registre de depuració WayaWolfCoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1590,8 +1588,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the RainbowLite RPC console.</source>
-        <translation>Benvingut a la consola RPC de RainbowLite.</translation>
+        <source>Welcome to the WayaWolfCoin RPC console.</source>
+        <translation>Benvingut a la consola RPC de WayaWolfCoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1749,8 +1747,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça RainbowLite (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça WayaWolfCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1849,8 +1847,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid RainbowLite address</source>
-        <translation>ADVERTÈNCIA: Direcció RainbowLite invàlida</translation>
+        <source>WARNING: Invalid WayaWolfCoin address</source>
+        <translation>ADVERTÈNCIA: Direcció WayaWolfCoin invàlida</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1923,8 +1921,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça RainbowLite (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça WayaWolfCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1984,8 +1982,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this RainbowLite address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça RainbowLite</translation>
+        <source>Sign the message to prove you own this WayaWolfCoin address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2016,8 +2014,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça RainbowLite especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified WayaWolfCoin address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça WayaWolfCoin especificada.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2027,8 +2025,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça RainbowLite (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça WayaWolfCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2037,8 +2035,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter RainbowLite signature</source>
-        <translation>Introduïu la signatura RainbowLite</translation>
+        <source>Enter WayaWolfCoin signature</source>
+        <translation>Introduïu la signatura WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2608,8 +2606,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>RainbowLite version</source>
-        <translation>versió RainbowLite</translation>
+        <source>WayaWolfCoin version</source>
+        <translation>versió WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2618,8 +2616,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or RainbowLited</source>
-        <translation>Enviar comandes a -server o RainbowLited</translation>
+        <source>Send command to -server or WayaWolfCoind</source>
+        <translation>Enviar comandes a -server o WayaWolfCoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2638,13 +2636,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: RainbowLite.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: RainbowLite.conf)</translation>
+        <source>Specify configuration file (default: WayaWolfCoin.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: WayaWolfCoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: RainbowLited.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: RainbowLited.pid)</translation>
+        <source>Specify pid file (default: WayaWolfCoind.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: WayaWolfCoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2793,8 +2791,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
-        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni RainbowLite no funcionarà correctament.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong WayaWolfCoin will not work properly.</source>
+        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni WayaWolfCoin no funcionarà correctament.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2983,24 +2981,24 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, ha d&apos;establir un rpcpassword al fitxer de configuració:
 %s
 Es recomana utilitzar la següent contrasenya aleatòria:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (No cal recordar aquesta contrasenya)
 El nom d&apos;usuari i contrasenya NO HA DE SER el mateix.
 Si no hi ha l&apos;arxiu, s&apos;ha de crear amb els permisos de només lectura per al propietari.
 També es recomana establir alertnotify per a que se li notifiquin els problemes;
-per exemple: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
+per exemple: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3126,13 +3124,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
-        <translation>No es pot obtenir un bloqueig en el directori de dades %s. RainbowLite probablement ja estigui en funcionament.</translation>
+        <source>Cannot obtain a lock on data directory %s.  WayaWolfCoin is probably already running.</source>
+        <translation>No es pot obtenir un bloqueig en el directori de dades %s. WayaWolfCoin probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3166,13 +3164,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
-        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de RainbowLite</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of WayaWolfCoin</source>
+        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
-        <translation>El moneder necessita ser reescrita: reiniciar RainbowLite per completar</translation>
+        <source>Wallet needed to be rewritten: restart WayaWolfCoin to complete</source>
+        <translation>El moneder necessita ser reescrita: reiniciar WayaWolfCoin per completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3241,8 +3239,8 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
-        <translation>No es pot enllaçar a %s en aquest equip. RainbowLite probablement ja estigui en funcionament.</translation>
+        <source>Unable to bind to %s on this computer. WayaWolfCoin is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest equip. WayaWolfCoin probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "RainbowLite"
-            VALUE "FileDescription",    "RainbowLite-Qt (OSS GUI client for RainbowLite)"
+            VALUE "CompanyName",        "WayaWolfCoin"
+            VALUE "FileDescription",    "WayaWolfCoin-Qt (OSS GUI client for WayaWolfCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "RainbowLite-qt"
-            VALUE "LegalCopyright",     "2009-2014 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2014 The LiteCoinUltra developers, 2018 The RainbowLite developers"
+            VALUE "InternalName",       "WayaWolfCoin-qt"
+            VALUE "LegalCopyright",     "2009-2014 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2014 The LiteCoinUltra developers, 2018 The RainbowLite developers, 2021 The WayaWolfCoin developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "RainbowLite-qt.exe"
-            VALUE "ProductName",        "RainbowLite-Qt"
+            VALUE "OriginalFilename",   "WayaWolfCoin-qt.exe"
+            VALUE "ProductName",        "WayaWolfCoin-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

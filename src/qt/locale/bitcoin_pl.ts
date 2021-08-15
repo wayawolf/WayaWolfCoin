@@ -3,20 +3,21 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About RainbowLite</source>
-        <translation>O RainbowLite</translation>
+        <source>About WayaWolfCoin</source>
+        <translation>O WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;RainbowLite&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;RainbowLite&lt;/b&gt; wersja</translation>
+        <source>&lt;b&gt;WayaWolfCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;WayaWolfCoin&lt;/b&gt; wersja</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The LiteCoinUltra developers
-Copyright © 2018 The RainbowLite developers</source>
+Copyright © 2017 The LiteCoinUltra developers
+Copyright © 2018 The RainbowLite developers
+Copyright © 2021 The WayaWolfCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -64,7 +65,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your RainbowLite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your WayaWolfCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Tutaj znajdują się twoje adresy do odbierania wpłat.
 Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo pochodzi wpłata.</translation>
     </message>
@@ -80,8 +81,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a RainbowLite address</source>
-        <translation>Podpisz wiadomość by udowodnić, że jesteś właścicielem adresu RainbowLite</translation>
+        <source>Sign a message to prove you own a WayaWolfCoin address</source>
+        <translation>Podpisz wiadomość by udowodnić, że jesteś właścicielem adresu WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +96,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified RainbowLite address</source>
-        <translation>Zweryfikuj wiadomość, w celu zapewnienia, że została podpisana z określonego adresu RainbowLite</translation>
+        <source>Verify a message to ensure it was signed with a specified WayaWolfCoin address</source>
+        <translation>Zweryfikuj wiadomość, w celu zapewnienia, że została podpisana z określonego adresu WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,7 +264,7 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="-58"/>
-        <source>RainbowLite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>WayaWolfCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -377,8 +378,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about RainbowLite</source>
-        <translation>Pokaż informacje dotyczące RainbowLite</translation>
+        <source>Show information about WayaWolfCoin</source>
+        <translation>Pokaż informacje dotyczące WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,12 +428,12 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a RainbowLite address</source>
-        <translation>Wyślij monety na adres RainbowLite</translation>
+        <source>Send coins to a WayaWolfCoin address</source>
+        <translation>Wyślij monety na adres WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for RainbowLite</source>
+        <source>Modify configuration options for WayaWolfCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -472,8 +473,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="-200"/>
-        <source>RainbowLite</source>
-        <translation>RainbowLite</translation>
+        <source>WayaWolfCoin</source>
+        <translation>WayaWolfCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,7 +483,7 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About RainbowLite</source>
+        <source>&amp;About WayaWolfCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -539,12 +540,12 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>RainbowLite client</source>
+        <source>WayaWolfCoin client</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to RainbowLite network</source>
+        <source>%n active connection(s) to WayaWolfCoin network</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -659,7 +660,7 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid RainbowLite address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid WayaWolfCoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -719,7 +720,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. RainbowLite can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. WayaWolfCoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1039,7 +1040,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid RainbowLite address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid WayaWolfCoin address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1058,7 +1059,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>RainbowLite-Qt</source>
+        <source>WayaWolfCoin-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1131,12 +1132,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start RainbowLite after logging in to the system.</source>
+        <source>Automatically start WayaWolfCoin after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start RainbowLite on system login</source>
+        <source>&amp;Start WayaWolfCoin on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1156,7 +1157,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the RainbowLite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the WayaWolfCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1166,7 +1167,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the RainbowLite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the WayaWolfCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1241,7 +1242,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting RainbowLite.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting WayaWolfCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1256,7 +1257,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show RainbowLite addresses in the transaction list or not.</source>
+        <source>Whether to show WayaWolfCoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1303,7 +1304,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting RainbowLite.</source>
+        <source>This setting will take effect after restarting WayaWolfCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1322,7 +1323,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RainbowLite network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WayaWolfCoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1538,7 +1539,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the RainbowLite-Qt help message to get a list with possible RainbowLite command-line options.</source>
+        <source>Show the WayaWolfCoin-Qt help message to get a list with possible WayaWolfCoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1558,12 +1559,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>RainbowLite - Debug window</source>
+        <source>WayaWolfCoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>RainbowLite Core</source>
+        <source>WayaWolfCoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1573,7 +1574,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the RainbowLite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the WayaWolfCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1583,7 +1584,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the RainbowLite RPC console.</source>
+        <source>Welcome to the WayaWolfCoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1742,7 +1743,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1842,7 +1843,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid RainbowLite address</source>
+        <source>WARNING: Invalid WayaWolfCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1916,7 +1917,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1977,7 +1978,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this RainbowLite address</source>
+        <source>Sign the message to prove you own this WayaWolfCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2009,7 +2010,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified RainbowLite address</source>
+        <source>Verify the message to ensure it was signed with the specified WayaWolfCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2020,7 +2021,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a RainbowLite address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a WayaWolfCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2030,7 +2031,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter RainbowLite signature</source>
+        <source>Enter WayaWolfCoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2601,7 +2602,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>RainbowLite version</source>
+        <source>WayaWolfCoin version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2611,7 +2612,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or RainbowLited</source>
+        <source>Send command to -server or WayaWolfCoind</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2631,12 +2632,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: RainbowLite.conf)</source>
+        <source>Specify configuration file (default: WayaWolfCoin.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: RainbowLited.pid)</source>
+        <source>Specify pid file (default: WayaWolfCoind.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2786,7 +2787,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong RainbowLite will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong WayaWolfCoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2975,13 +2976,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=RainbowLiterpc
+rpcuser=WayaWolfCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;WayaWolfCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3107,12 +3108,12 @@ for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  RainbowLite is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  WayaWolfCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>RainbowLite</source>
+        <source>WayaWolfCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3147,12 +3148,12 @@ for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of RainbowLite</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of WayaWolfCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart RainbowLite to complete</source>
+        <source>Wallet needed to be rewritten: restart WayaWolfCoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3222,7 +3223,7 @@ for example: alertnotify=echo %%s | mail -s &quot;RainbowLite Alert&quot; admin@
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. RainbowLite is probably already running.</source>
+        <source>Unable to bind to %s on this computer. WayaWolfCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

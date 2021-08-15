@@ -528,7 +528,7 @@ void StakeMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("RainbowLited-miner");
+    RenameThread("WayaWolfCoind-miner");
 
     bool fTryToSync = true;
 

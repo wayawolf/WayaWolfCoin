@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("RainbowLite");
-    case mBTC: return QString("Milli-RainbowLite (1 / 1,000)");
-    case uBTC: return QString("Micro-RainbowLite (1 / 1,000,000)");
+    case BTC: return QString("WayaWolfCoin");
+    case mBTC: return QString("Milli-WayaWolfCoin (1 / 1,000)");
+    case uBTC: return QString("Micro-WayaWolfCoin (1 / 1,000,000)");
     default: return QString("???");
     }
 }

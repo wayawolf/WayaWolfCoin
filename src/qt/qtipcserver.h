@@ -1,8 +1,8 @@
 #ifndef QTIPCSERVER_H
 #define QTIPCSERVER_H
 
-// Define RainbowLite-Qt message queue name
-#define BITCOINURI_QUEUE_NAME "RainbowLiteURI"
+// Define WayaWolfCoin-Qt message queue name
+#define BITCOINURI_QUEUE_NAME "WayaWolfCoinURI"
 
 void ipcScanRelay(int argc, char *argv[]);
 void ipcInit(int argc, char *argv[]);
