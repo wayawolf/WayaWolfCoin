@@ -1014,10 +1014,11 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees, uint256 prevHash)
 {
-    int64_t nSubsidy = COIN_POW_REWARD;
+    int64_t nSubsidy;
+    int64_t nHalvingHeight = nBestHeight + BLOCK_HALVING_INTERVAL - BLOCK_HALVING_START;
+    int nHalvingCount = nHalvingHeight / BLOCK_HALVING_INTERVAL;
 
-    if(nBestHeight == 0)
-    {
+    if(nBestHeight == 0) {
         nSubsidy = COIN_POW_PREMINE;
     }
 

@@ -406,7 +406,8 @@ public:
     void SetSecret(const CSecret& vchSecret, bool fCompressed)
     {
         assert(vchSecret.size() == 32);
-        SetData(128 + (fTestNet ? CBitcoinAddress::PUBKEY_ADDRESS_TEST : CBitcoinAddress::PUBKEY_ADDRESS), &vchSecret[0], vchSecret.size());
+	unsigned char nNewVersion = (fTestNet ? CBitcoinAddress::PUBKEY_ADDRESS_TEST : CBitcoinAddress::PUBKEY_ADDRESS) ^ 0x80;
+        SetData(nNewVersion, &vchSecret[0], vchSecret.size());
         if (fCompressed)
             vchData.push_back(1);
     }
@@ -423,12 +424,13 @@ public:
     bool IsValid() const
     {
         bool fExpectTestNet = false;
-        switch(nVersion)
+	unsigned char nActualVersion = nVersion ^ 0x80;
+        switch(nActualVersion)
         {
-            case (128 + CBitcoinAddress::PUBKEY_ADDRESS):
+            case CBitcoinAddress::PUBKEY_ADDRESS:
                 break;
 
-            case (128 + CBitcoinAddress::PUBKEY_ADDRESS_TEST):
+            case CBitcoinAddress::PUBKEY_ADDRESS_TEST:
                 fExpectTestNet = true;
                 break;
 
