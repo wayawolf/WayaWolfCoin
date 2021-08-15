@@ -274,12 +274,13 @@ public:
 class CBitcoinAddress : public CBase58Data
 {
 public:
+    // See https://en.bitcoin.it/wiki/List_of_address_prefixes
     enum
     {
-        PUBKEY_ADDRESS = 122, 	    // r
-        SCRIPT_ADDRESS = 107,	    // k
-        PUBKEY_ADDRESS_TEST = 60,   // R
-        SCRIPT_ADDRESS_TEST = 47,   // K
+        PUBKEY_ADDRESS = 73, 	    // W
+        SCRIPT_ADDRESS = 75,	    // X
+        PUBKEY_ADDRESS_TEST = 135,  // w
+        SCRIPT_ADDRESS_TEST = 137,  // x
     };
 
     bool Set(const CKeyID &id) {
