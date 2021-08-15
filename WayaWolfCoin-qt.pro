@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = WayaWolfCoin-qt
-VERSION = 1.0.8.0
+VERSION = 2.0.0.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui widgets network printsupport
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE

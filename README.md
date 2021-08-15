@@ -1,7 +1,7 @@
 
 WayaWolfCoin development tree
 
-WayaWolfCoin is a PoS-based cryptocurrency.
+WayaWolfCoin is a PoW/PoS-based cryptocurrency.
 
 Development process
 ===========================
