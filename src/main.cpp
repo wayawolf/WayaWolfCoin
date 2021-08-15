@@ -43,14 +43,14 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 60;
+unsigned int nTargetSpacing = 5 * 60;
 static const int64_t nMaxAdjustUp = 25;
 static const int64_t nMaxAdjustDown = 50;
 static const int64_t nAdjustAmplitude = 25;
 
 unsigned int nStakeMinAge = 3 * 24 * 60 * 60;
 unsigned int nStakeMaxAge = -1;
-unsigned int nModifierInterval = 10 * 60;
+unsigned int nModifierInterval = 5 * 60;
 
 int nCoinbaseMaturity = 10;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -1011,12 +1011,30 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
     return pblockOrphan->hashPrevBlock;
 }
 
+int64_t GetRewardCoins(uint64_t nBlockHeight) {
+    int64_t nSubsidy;
+    int64_t nHalvingHeight = nBlockHeight + BLOCK_HALVING_INTERVAL - BLOCK_HALVING_START;
+    int nHalvingCount = nHalvingHeight / BLOCK_HALVING_INTERVAL;
+
+    nSubsidy = COIN_REWARD;
+    for (int i = 0; i < nHalvingCount; i++) {
+        // Round as we go down
+        nSubsidy += 1;
+        nSubsidy /= 2;
+    }
+
+    // Shouldn't happen with the above rounding, but let's make sure */
+    if (nSubsidy < 1) {
+        nSubsidy = 1;
+    }
+
+    return nSubsidy;
+}
+
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees, uint256 prevHash)
 {
-    int64_t nSubsidy;
-    int64_t nHalvingHeight = nBestHeight + BLOCK_HALVING_INTERVAL - BLOCK_HALVING_START;
-    int nHalvingCount = nHalvingHeight / BLOCK_HALVING_INTERVAL;
+    int64_t nSubsidy = GetRewardCoins(nBestHeight);
 
     if(nBestHeight == 0) {
         nSubsidy = COIN_POW_PREMINE;
@@ -1032,7 +1050,7 @@ int64_t GetProofOfWorkReward(int64_t nFees, uint256 prevHash)
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, uint256 prevHash)
 
 {
-    int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+    int64_t nSubsidy = GetRewardCoins(nBestHeight);
 
     if(nBestHeight <= POS_START_BLOCK)
 	return 0;
