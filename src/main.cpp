@@ -33,7 +33,7 @@ CCriticalSection cs_main;
 
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
-bool nDoGenesis = true;
+bool nDoGenesis = false;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
@@ -2562,7 +2562,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1629097342;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 530707 : 0;
+        block.nNonce   = !fTestNet ? 1220093 : 0;
 
         if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
             // This will figure out a valid hash and Nonce if you're
@@ -2588,7 +2588,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 	fflush(NULL);
 
-        assert(block.hashMerkleRoot == uint256("0xa099e48df53bb2e34370c240999f6b765e0b690bf803e6f814a54a66dfdc35ca"));
+        assert(block.hashMerkleRoot == uint256("0x515ee73c532381b30a15b39855e5b0c7fe5a4da5f851048e87cb2312d7f8bb1c"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
