@@ -33,7 +33,7 @@ CCriticalSection cs_main;
 
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
-bool nDoGenesis = false;
+bool nDoGenesis = true;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
@@ -2548,26 +2548,9 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-
-        // MainNet:
-
-        //CBlock(hash=000001faef25dec4fbcf906e6242621df2c183bf232f263d0ba5b101911e4563, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12630d16a97f24b287c8c2594dda5fb98c9e6c70fc61d44191931ea2aa08dc90, nTime=1486933511, nBits=1e0fffff, nNonce=164482, vtx=1, vchBlockSig=)
-        //  Coinbase(hash=12630d16a9, nTime=1486933511, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
-        //    CTxOut(empty)
-        //  vMerkleTree: 12630d16a9
-
-        // TestNet:
-
-        //CBlock(hash=0000724595fb3b9609d441cbfb9577615c292abf07d996d3edabc48de843642d, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12630d16a97f24b287c8c2594dda5fb98c9e6c70fc61d44191931ea2aa08dc90, nTime=1486933511, nBits=1f00ffff, nNonce=216178, vtx=1, vchBlockSig=)
-        //  Coinbase(hash=12630d16a9, nTime=1486933511, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
-        //    CTxOut(empty)
-        //  vMerkleTree: 12630d16a9
-
-        const char* pszTimestamp = "WayaWolfCoin V1.3 26-07-2017 6.21";
+        const char* pszTimestamp = "WayaWolfCoin V2.0 08-16-2021";
         CTransaction txNew;
-        txNew.nTime = 1514868443;
+        txNew.nTime = 1629097342;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2577,7 +2560,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1514868443;
+        block.nTime    = 1629097342;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = !fTestNet ? 530707 : 0;
 
@@ -2605,7 +2588,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 	fflush(NULL);
 
-        assert(block.hashMerkleRoot == uint256("0x1575cb9c40fff4150185c8c9575e8445ab2766a5caff4839cb9f37842df880d2"));
+        assert(block.hashMerkleRoot == uint256("0xa099e48df53bb2e34370c240999f6b765e0b690bf803e6f814a54a66dfdc35ca"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
