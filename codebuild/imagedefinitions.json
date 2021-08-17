@@ -1,0 +1,6 @@
+[
+  {
+    "name": "WayaWolfCoin-Node",
+    "imageUri": "890058568674.dkr.ecr.us-west-2.amazonaws.com/coin-nodes:wayawolf-node"
+  }
+]
