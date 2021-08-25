@@ -1136,12 +1136,20 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 
     int64_t nActualTimespan = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
 
+    if (!fProofOfStake) {
+        printf("nActualTimeSpan: %" PRId64 "\n", nActualTimespan);
+    }
+
     // amplitude filter - weight the adjustment
     nActualTimespan = retargetTimespan + nAdjustAmplitude * (nActualTimespan - retargetTimespan) / 100;
 
     // Clamp the value between [75%, 150%] of retargetTimespan
     nActualTimespan = max(nActualTimespan, lowerLimit);
     nActualTimespan = min(nActualTimespan, upperLimit);
+
+    if (!fProofOfStake) {
+        printf("adjusted nActualTimeSpan: %" PRId64 "\n", nActualTimespan);
+    }
 
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
@@ -1152,6 +1160,10 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 	printf("bnNew: %08X > bnTargetLimit: %08X, resetting\n",
 	       bnNew.GetCompact(), bnTargetLimit.GetCompact());
         bnNew = bnTargetLimit;
+    }
+
+    if (!fProofOfStake) {
+        printf("bnNew: %08X, diff: %0.8f\n", bnNew.GetCompact(), bnNew.GetDifficulty());
     }
 
     return bnNew.GetCompact();

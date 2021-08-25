@@ -455,7 +455,7 @@ public:
         CBigNum ret;
         if (!BN_mod_mul(&ret, this, &b, &m, pctx))
             throw bignum_error("CBigNum::mul_mod : BN_mod_mul failed");
-        
+
         return ret;
     }
 
