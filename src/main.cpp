@@ -48,8 +48,8 @@ static const int nMaxAdjustUp = 25;
 static const int nMaxAdjustDown = 50;
 static const int nAdjustAmplitude = 25;
 
-static const double nMaxDiffIncrease = 25.0;
-static const double nMaxDiffDecrease = 50.0;
+static const double nMaxDiffIncrease = 75.0;
+static const double nMaxDiffDecrease = 75.0;
 static const double nMaxDeltaThreshold = 10.0;
 static const double nDeltaDamping = 75.0;
 
@@ -1270,7 +1270,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 
     for (int i = 0; i < RETARGET_BLOCK_COUNT-1; i++) {
 	if (dt[i]) {
-            hashcount[i] = (uint64_t)(difficulty[i] * (double)bit32); 
+            hashcount[i] = (uint64_t)(difficulty[i+1] * (double)bit32); 
             hashrate[i] = hashcount[i] / dt[i]; 
 	    total_time += dt[i];
 	    total_hashcount += hashcount[i];
