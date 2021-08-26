@@ -1188,6 +1188,7 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
  * of the last 8 blocks.  We will also put bounds on how much the difficulty
  * is allowed to change per re-target.
  */
+#define DEBUG_DIFFICULTY
 unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
     static const int weight[RETARGET_BLOCK_COUNT] = {4, 2, 1, 1, 1, 1, 1, 1};
@@ -1254,9 +1255,6 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	    avg_dt += dt[i] * weight[i];
 	    tot_dt_weight += weight[i];
 	}
-#ifdef DEBUG_DIFFICULTY
-	printf("dt[%d]: %" PRId64 "\n", i, dt[i]);
-#endif
     }
     
     if (tot_dt_weight == 0) {
@@ -1266,26 +1264,29 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     }
 
     uint64_t hashrate[RETARGET_BLOCK_COUNT-1];
-    uint64_t avg_hashrate = 0;
-    int tot_hashrate_weight = 0;
+    uint64_t hashcount[RETARGET_BLOCK_COUNT-1];
+    uint64_t total_time = 0;
+    uint64_t total_hashcount = 0;
 
     for (int i = 0; i < RETARGET_BLOCK_COUNT-1; i++) {
 	if (dt[i]) {
-            hashrate[i] = (uint64_t)(difficulty[i] * (double)bit32) / dt[i]; 
-            avg_hashrate += hashrate[i] * weight[i];
-            tot_hashrate_weight += weight[i];
+            hashcount[i] = (uint64_t)(difficulty[i] * (double)bit32); 
+            hashrate[i] = hashcount[i] / dt[i]; 
+	    total_time += dt[i];
+	    total_hashcount += hashcount[i];
 	} else {
+	    hashcount[i] = 0;
 	    hashrate[i] = 0;
 	}
 #ifdef DEBUG_DIFFICULTY
-	printf("hashrate[%d]: %" PRIu64 "\n", i, hashrate[i]);
+	printf("hashcount[%d]: %" PRIu64 ", dt[%d]: %" PRId64 ", hashrate[%d]: %" PRIu64 "\n",
+               i, hashcount[i], i, dt[i], i, hashrate[i]);
 #endif
     }
 
-    if (tot_hashrate_weight == 0) {
-	avg_hashrate = 0;
-    } else {
-	avg_hashrate /= tot_hashrate_weight;
+    uint64_t avg_hashrate = 0;
+    if (total_time != 0) {
+	avg_hashrate = total_hashcount / total_time;
     }
 
     int64_t d2t[RETARGET_BLOCK_COUNT-2];
@@ -1304,8 +1305,8 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 
     double stddev_dt = sqrt((double)variance_dt / (double)(RETARGET_BLOCK_COUNT-1));
 
-    printf("dt[0]: %" PRId64 ", Avg dt: %" PRId64 ", StdDev dt: %0.3f, d2t[0]: %" PRId64 ", Avg hashrate: %" PRIu64 "\n",
-           dt[0], avg_dt, stddev_dt, d2t[0], avg_hashrate);
+    printf("dt[0]: %" PRId64 ", Avg dt: %" PRId64 ", StdDev dt: %0.3f, d2t[0]: %" PRId64 "\n",
+           dt[0], avg_dt, stddev_dt, d2t[0]);
 
     printf("nTargetSpacing: %" PRIu64 ", avg hashrate: %" PRIu64 "\n",
 	    nTargetSpacing, avg_hashrate);
@@ -1345,10 +1346,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
            diffChange);
 
     uint32_t target = GetTargetFromDifficulty(clampedDiff);
-    double verify = GetDifficultyFromTarget(target);
-
-    printf("Old nBits: %08X, New nBits: %08X, Verify Diff: %0.8f\n",
-           nBits[0], target, verify);
+    printf("Old nBits: %08X, New nBits: %08X\n", nBits[0], target);
 
     CBigNum bnNew;
     bnNew.SetCompact(target);
@@ -1358,8 +1356,12 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	target = nBitsTargetLimit;
     }
 
+    double verify = GetDifficultyFromTarget(target);
+    printf("final nBits: %08X, final difficulty: %0.8f\n", target, verify);
+
     return target;
 }
+#undef DEBUG_DIFFICULTY
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
