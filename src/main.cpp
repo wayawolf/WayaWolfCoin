@@ -11,6 +11,7 @@
 #include "init.h"
 #include "ui_interface.h"
 #include "kernel.h"
+#include "bitcoinrpc.h"
 #include "zerocoin/Zerocoin.h"
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
@@ -43,11 +44,16 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 5 * 60;
-static const int64_t nMaxAdjustUp = 25;
-static const int64_t nMaxAdjustDown = 50;
-static const int64_t nAdjustAmplitude = 25;
+static const int nMaxAdjustUp = 25;
+static const int nMaxAdjustDown = 50;
+static const int nAdjustAmplitude = 25;
 
+static const double nMaxDiffIncrease = 25.0;
+static const double nMaxDiffDecrease = 50.0;
+static const double nMaxDeltaThreshold = 10.0;
+static const double nDeltaDamping = 75.0;
+
+uint64_t nTargetSpacing = 5 * 60;
 unsigned int nStakeMinAge = 3 * 24 * 60 * 60;
 unsigned int nStakeMaxAge = -1;
 unsigned int nModifierInterval = 5 * 60;
@@ -1162,16 +1168,182 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
         bnNew = bnTargetLimit;
     }
 
+    uint32_t newBits = bnNew.GetCompact();
     if (!fProofOfStake) {
-        printf("bnNew: %08X, diff: %0.8f\n", bnNew.GetCompact(), bnNew.GetDifficulty());
+        printf("bnNew: %08X, diff: %0.8f\n", newBits, GetDifficultyFromTarget(newBits));
     }
 
-    return bnNew.GetCompact();
+    return newBits;
+}
+
+/* 
+ * This is our rework.  We want to set the difficulty based on the hashrates
+ * of the last 8 blocks.  We will also put bounds on how much the difficulty
+ * is allowed to change per re-target.
+ */
+unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofOfStake)
+{
+    static const int weight[RETARGET_BLOCK_COUNT] = {4, 2, 1, 1, 1, 1, 1, 1};
+
+    CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
+    uint32_t nBitsTargetLimit = bnTargetLimit.GetCompact();
+
+    // find the previous 8 blocks of the requested type (either POS or POW)
+    const CBlockIndex* pOldBlocks[RETARGET_BLOCK_COUNT];
+
+    const CBlockIndex* pIndex = pindexLast;
+    for (int i = 0; i < RETARGET_BLOCK_COUNT; i++) {
+	if (pIndex) {
+	    pOldBlocks[i] = GetLastBlockIndex(pIndex, fProofOfStake);
+	    pIndex = pOldBlocks[i]->pprev;
+	} else {
+	    pOldBlocks[i] = NULL;
+	}
+	printf("pOldBlock[%d]: %p\n", i, pOldBlocks[i]);
+    }
+
+    int64_t blockTime[RETARGET_BLOCK_COUNT];
+    uint32_t nBits[RETARGET_BLOCK_COUNT];
+    double difficulty[RETARGET_BLOCK_COUNT];
+    uint64_t bit32 = 1LL << 32;
+
+    for (int i = 0; i < RETARGET_BLOCK_COUNT; i++) {
+	pIndex = pOldBlocks[i];
+	if (pIndex) {
+	    blockTime[i] = pIndex->GetBlockTime();
+	    if (blockTime[i] == 0) {
+		blockTime[i] = 1;
+	    }
+	    nBits[i] = pIndex->nBits;
+	    difficulty[i] = GetDifficultyFromTarget(nBits[i]);
+	} else {
+	    blockTime[i] = 0;
+	    nBits[i] = 0;
+	    difficulty[i] = 0.0;
+	}
+	printf("blockTime[%d]: %" PRId64 ", nBits[%d]: %08X, difficulty[%d]: %0.8f\n",
+	       i, blockTime[i], i, nBits[i], i, difficulty[i]);
+    }
+
+    if (blockTime[1] == 0) {
+	printf("Bypassing: nBits: %08X\n", nBitsTargetLimit);
+	return nBitsTargetLimit;
+    }
+
+    int64_t avg_dt = 0;
+    int tot_dt_weight = 0;
+    int64_t dt[RETARGET_BLOCK_COUNT-1];
+    for (int i = 0; i < RETARGET_BLOCK_COUNT-1; i++) {
+	if (blockTime[i+1] == 0) {
+            dt[i] = 0;
+	} else {
+	    dt[i] = blockTime[i] - blockTime[i+1];
+	    avg_dt += dt[i] * weight[i];
+	    tot_dt_weight += weight[i];
+	}
+	printf("dt[%d]: %" PRId64 "\n", i, dt[i]);
+    }
+    
+    if (tot_dt_weight == 0) {
+	avg_dt = 0;
+    } else {
+	avg_dt /= tot_dt_weight;
+    }
+
+    uint64_t hashrate[RETARGET_BLOCK_COUNT-1];
+    uint64_t avg_hashrate = 0;
+    int tot_hashrate_weight = 0;
+
+    for (int i = 0; i < RETARGET_BLOCK_COUNT-1; i++) {
+	if (dt[i]) {
+            hashrate[i] = (uint64_t)(difficulty[i] * (double)bit32) / dt[i]; 
+            avg_hashrate += hashrate[i] * weight[i];
+            tot_hashrate_weight += weight[i];
+	} else {
+	    hashrate[i] = 0;
+	}
+	printf("hashrate[%d]: %" PRIu64 "\n", i, hashrate[i]);
+    }
+
+    if (tot_hashrate_weight == 0) {
+	avg_hashrate = 0;
+    } else {
+	avg_hashrate /= tot_hashrate_weight;
+    }
+
+    int64_t d2t[RETARGET_BLOCK_COUNT-2];
+    for (int i = 0; i < RETARGET_BLOCK_COUNT-2; i++) {
+	d2t[i] = dt[i] - dt[i+1];
+	printf("d2t[%d]: %" PRId64 "\n", i, d2t[i]);
+    }
+
+    uint64_t variance_dt = 0;
+    for (int i = 0; i < RETARGET_BLOCK_COUNT-1; i++) {
+	int64_t item = dt[i] - avg_dt;
+	variance_dt += item * item;
+    }
+
+    double stddev_dt = sqrt((double)variance_dt / (double)(RETARGET_BLOCK_COUNT-1));
+
+    printf("dt[0]: %" PRId64 ", Avg dt: %" PRId64 ", StdDev dt: %0.3f, d2t[0]: %" PRId64 ", Avg hashrate: %" PRIu64 "\n",
+           dt[0], avg_dt, stddev_dt, d2t[0], avg_hashrate);
+
+    printf("nTargetSpacing: %" PRIu64 ", avg hashrate: %" PRIu64 ", bit32: %016" PRIx64 "\n", nTargetSpacing, avg_hashrate, bit32);
+    double newDiff = (double)(nTargetSpacing * avg_hashrate) / (double)(bit32);
+    
+    double diffChange;
+    if (difficulty[0] <= 0.000000001) {
+	diffChange = 0.0;
+    } else {
+        diffChange = 100.0 * (newDiff - difficulty[0]) / difficulty[0];
+    }
+
+    printf("Old difficulty: %0.8f, New difficulty: %0.8f, Change: %0.3f%%\n",
+           difficulty[0], newDiff, diffChange);
+
+    if (diffChange > nMaxDeltaThreshold || diffChange < -nMaxDeltaThreshold) {
+	// This delta is too large, so we will do only part of it so we
+	// can create an exponential rise/fall to dampen the change
+	diffChange *= nDeltaDamping / 100.0;
+	printf("Dampening delta by %0.3f%% to %0.3f%%\n", nDeltaDamping,
+	       diffChange);
+    }
+
+    if (diffChange > nMaxDiffIncrease) {
+	diffChange = nMaxDiffIncrease;
+    }
+
+    if (diffChange < -nMaxDiffDecrease) {
+	diffChange = -nMaxDiffDecrease;
+    }
+
+    double clampedDiff = difficulty[0];
+    clampedDiff *= (100.0 + diffChange);
+    clampedDiff /= 100.0;
+
+    printf("Clamped difficulty: %0.8f, Change: %0.3f%%\n", clampedDiff, 
+           diffChange);
+
+    uint32_t target = GetTargetFromDifficulty(clampedDiff);
+    double verify = GetDifficultyFromTarget(target);
+
+    printf("Old nBits: %08X, New nBits: %08X, Verify Diff: %0.8f\n",
+           nBits[0], target, verify);
+
+    CBigNum bnNew;
+    bnNew.SetCompact(target);
+    if (bnNew <= 0 || bnNew > bnTargetLimit) {
+	printf("target: %08X > bnTargetLimit: %08X, resetting\n",
+	       target, nBitsTargetLimit);
+	target = nBitsTargetLimit;
+    }
+
+    return target;
 }
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
+    return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
