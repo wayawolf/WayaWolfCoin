@@ -24,23 +24,65 @@ double GetDifficulty(const CBlockIndex* blockindex)
             blockindex = GetLastBlockIndex(pindexBest, false);
     }
 
-    int nShift = (blockindex->nBits >> 24) & 0xff;
+    return GetDifficultyFromTarget(blockindex->nBits);
+}
 
-    double dDiff =
-        (double)0x0000ffff / (double)(blockindex->nBits & 0x00ffffff);
+double GetDifficultyFromTarget(uint32_t nBits)
+{
+    uint64_t numerator = 0x0000FFFF;
+    uint64_t denominator = nBits & 0x00FFFFFF;
+    printf("numerator: %016" PRIx64 ", denominator: %016" PRIx64"\n", numerator, denominator);
 
-    while (nShift < 29)
-    {
-        dDiff *= 256.0;
-        nShift++;
+    int nShift = 29 - ((nBits >> 24) & 0xff);
+    printf("nShift: %d\n", nShift);
+    if (nShift < 0) {
+        denominator <<= -8 * nShift;
+    } else if (nShift < 0) {
+        numerator <<= 8 * nShift;
     }
-    while (nShift > 29)
-    {
-        dDiff /= 256.0;
-        nShift--;
-    }
+    printf("numerator: %016" PRIx64 ", denominator: %016" PRIx64 "\n", numerator, denominator);
 
+    double dDiff = (double)numerator / (double)denominator;
+    printf("diff: %0.8f\n", dDiff);
     return dDiff;
+}
+
+uint32_t GetTargetFromDifficulty(double difficulty)
+{
+    if (difficulty <= 0.0000000001) {
+	return 0;
+    }
+
+    double numerator = (double)(0x0000FFFF);
+    double denominator = numerator / difficulty;
+    int nShift = 29;
+    printf("numerator: %0.9f, denominator: %0.9f, nShift: %d\n",
+           numerator, denominator, nShift);
+
+    double limit = (double)(0x00007FFF);
+    while (denominator <= limit) {
+	denominator *= 256.0;
+	nShift -= 1;
+    }
+    printf("limit: %0.9f, denominator: %0.9f, nShift: %d\n",
+           limit, denominator, nShift);
+
+    limit = (double)(0x007FFFFF);
+    while (denominator > limit) {
+	denominator /= 256.0;
+	nShift += 1;
+    }
+    printf("limit: %0.9f, denominator: %0.9f, nShift: %d\n",
+           limit, denominator, nShift);
+
+    if (nShift < 0 || nShift > 255) {
+	return 0;
+    }
+
+    uint32_t target = ((nShift & 0xFF) << 24);
+    target |= (uint32_t)(denominator) & 0x007FFFFF;
+    printf("target: %08X\n", target);
+    return target;
 }
 
 double GetPoWMHashPS()

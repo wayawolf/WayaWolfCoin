@@ -127,6 +127,8 @@ extern int64_t nWalletUnlockTime;
 extern int64_t AmountFromValue(const json_spirit::Value& value);
 extern json_spirit::Value ValueFromAmount(int64_t amount);
 extern double GetDifficulty(const CBlockIndex* blockindex = NULL);
+extern uint32_t GetTargetFromDifficulty(double difficulty);
+extern double GetDifficultyFromTarget(uint32_t nBits);
 
 extern double GetPoWMHashPS();
 extern double GetPoSKernelPS();
