@@ -1142,9 +1142,11 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 
     int64_t nActualTimespan = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
 
+#ifdef DEBUG_DIFFICULTY
     if (!fProofOfStake) {
         printf("nActualTimeSpan: %" PRId64 "\n", nActualTimespan);
     }
+#endif
 
     // amplitude filter - weight the adjustment
     nActualTimespan = retargetTimespan + nAdjustAmplitude * (nActualTimespan - retargetTimespan) / 100;
@@ -1153,9 +1155,11 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
     nActualTimespan = max(nActualTimespan, lowerLimit);
     nActualTimespan = min(nActualTimespan, upperLimit);
 
+#ifdef DEBUG_DIFFICULTY
     if (!fProofOfStake) {
         printf("adjusted nActualTimeSpan: %" PRId64 "\n", nActualTimespan);
     }
+#endif
 
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
@@ -1169,9 +1173,12 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
     }
 
     uint32_t newBits = bnNew.GetCompact();
+
+#ifdef DEBUG_DIFFICULTY
     if (!fProofOfStake) {
         printf("bnNew: %08X, diff: %0.8f\n", newBits, GetDifficultyFromTarget(newBits));
     }
+#endif
 
     return newBits;
 }
@@ -1188,6 +1195,8 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
     uint32_t nBitsTargetLimit = bnTargetLimit.GetCompact();
 
+    printf("Calculating target for %s\n", fProofOfStake ? "POS" : "POW");
+
     // find the previous 8 blocks of the requested type (either POS or POW)
     const CBlockIndex* pOldBlocks[RETARGET_BLOCK_COUNT];
 
@@ -1199,7 +1208,9 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	} else {
 	    pOldBlocks[i] = NULL;
 	}
+#ifdef DEBUG_DIFFICULTY
 	printf("pOldBlock[%d]: %p\n", i, pOldBlocks[i]);
+#endif
     }
 
     int64_t blockTime[RETARGET_BLOCK_COUNT];
@@ -1221,8 +1232,10 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	    nBits[i] = 0;
 	    difficulty[i] = 0.0;
 	}
+#ifdef DEBUG_DIFFICULTY
 	printf("blockTime[%d]: %" PRId64 ", nBits[%d]: %08X, difficulty[%d]: %0.8f\n",
 	       i, blockTime[i], i, nBits[i], i, difficulty[i]);
+#endif
     }
 
     if (blockTime[1] == 0) {
@@ -1241,7 +1254,9 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	    avg_dt += dt[i] * weight[i];
 	    tot_dt_weight += weight[i];
 	}
+#ifdef DEBUG_DIFFICULTY
 	printf("dt[%d]: %" PRId64 "\n", i, dt[i]);
+#endif
     }
     
     if (tot_dt_weight == 0) {
@@ -1262,7 +1277,9 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	} else {
 	    hashrate[i] = 0;
 	}
+#ifdef DEBUG_DIFFICULTY
 	printf("hashrate[%d]: %" PRIu64 "\n", i, hashrate[i]);
+#endif
     }
 
     if (tot_hashrate_weight == 0) {
@@ -1274,7 +1291,9 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     int64_t d2t[RETARGET_BLOCK_COUNT-2];
     for (int i = 0; i < RETARGET_BLOCK_COUNT-2; i++) {
 	d2t[i] = dt[i] - dt[i+1];
+#ifdef DEBUG_DIFFICULTY
 	printf("d2t[%d]: %" PRId64 "\n", i, d2t[i]);
+#endif
     }
 
     uint64_t variance_dt = 0;
@@ -1288,7 +1307,8 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     printf("dt[0]: %" PRId64 ", Avg dt: %" PRId64 ", StdDev dt: %0.3f, d2t[0]: %" PRId64 ", Avg hashrate: %" PRIu64 "\n",
            dt[0], avg_dt, stddev_dt, d2t[0], avg_hashrate);
 
-    printf("nTargetSpacing: %" PRIu64 ", avg hashrate: %" PRIu64 ", bit32: %016" PRIx64 "\n", nTargetSpacing, avg_hashrate, bit32);
+    printf("nTargetSpacing: %" PRIu64 ", avg hashrate: %" PRIu64 "\n",
+	    nTargetSpacing, avg_hashrate);
     double newDiff = (double)(nTargetSpacing * avg_hashrate) / (double)(bit32);
     
     double diffChange;
