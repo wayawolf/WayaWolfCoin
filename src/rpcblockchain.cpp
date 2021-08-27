@@ -110,11 +110,6 @@ uint32_t GetTargetFromDifficulty(double difficulty)
 
 double GetPoWMHashPS()
 {
-#if 0
-    if (pindexBest->nHeight >= LAST_POW_BLOCK)
-        return 0;
-#endif
-
     int nPoWInterval = 72;
     int64_t nTargetSpacingWorkMin = 30, nTargetSpacingWork = 30;
 

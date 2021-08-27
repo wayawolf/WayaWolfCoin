@@ -2061,8 +2061,9 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
 
     uint256 nBestBlockTrust = pindexBest->nHeight != 0 ? (pindexBest->nChainTrust - pindexBest->pprev->nChainTrust) : pindexBest->nChainTrust;
 
-    printf("SetBestChain: new best=%s  height=%d  trust=%s  blocktrust=%" PRId64 "  date=%s\n",
+    printf("SetBestChain: new best=%s  height=%d  POW=%d  POS=%d  trust=%s  blocktrust=%" PRId64 "  date=%s\n",
       hashBestChain.ToString().substr(0,20).c_str(), nBestHeight,
+      pindexBest->nPOWHeight, pindexBest->nPOSHeight,
       CBigNum(nBestChainTrust).ToString().c_str(),
       nBestBlockTrust.Get64(),
       DateTimeStrFormat("%x %H:%M:%S", pindexBest->GetBlockTime()).c_str());
@@ -2181,6 +2182,15 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
     {
         pindexNew->pprev = (*miPrev).second;
         pindexNew->nHeight = pindexNew->pprev->nHeight + 1;
+	pindexNew->nPOWHeight = pindexNew->pprev->nPOWHeight;
+	pindexNew->nPOSHeight = pindexNew->pprev->nPOSHeight;
+        if (IsProofOfWork()) {
+	    pindexNew->nPOWHeight++;
+	}
+
+        if (IsProofOfStake()) {
+	    pindexNew->nPOSHeight++;
+	}
     }
 
     // ppcoin: compute chain trust score
@@ -2344,11 +2354,6 @@ bool CBlock::AcceptBlock()
         return DoS(10, error("AcceptBlock() : prev block not found"));
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
-
-#if 0
-    if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
-        return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
-#endif
 
     // Check proof-of-work or proof-of-stake
     if (nBits != GetNextTargetRequired(pindexPrev, IsProofOfStake()))
@@ -2868,8 +2873,10 @@ void PrintBlockTree()
         // print item
         CBlock block;
         block.ReadFromDisk(pindex);
-        printf("%d (%u,%u) %s  %08x  %s  mint %7s  tx %" PRIszu,
+        printf("%d POW %s POS %d (%u,%u) %s  %08x  %s  mint %7s  tx %" PRIszu,
                pindex->nHeight,
+	       pindex->nPOWHeight,
+	       pindex->nPOSHeight,
                pindex->nFile,
                pindex->nBlockPos,
                block.GetHash().ToString().c_str(),

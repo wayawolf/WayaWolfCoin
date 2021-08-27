@@ -1129,6 +1129,8 @@ public:
     unsigned int nBlockPos;
     uint256 nChainTrust; // ppcoin: trust score of block chain
     int nHeight;
+    int nPOWHeight;
+    int nPOSHeight;
 
     int64_t nMint;
     int64_t nMoneySupply;
@@ -1165,6 +1167,8 @@ public:
         nFile = 0;
         nBlockPos = 0;
         nHeight = 0;
+	nPOWHeight = 0;
+	nPOSHeight = 0;
         nChainTrust = 0;
         nMint = 0;
         nMoneySupply = 0;
@@ -1190,6 +1194,8 @@ public:
         nFile = nFileIn;
         nBlockPos = nBlockPosIn;
         nHeight = 0;
+	nPOWHeight = 0;
+	nPOSHeight = 0;
         nChainTrust = 0;
         nMint = 0;
         nMoneySupply = 0;
@@ -1322,8 +1328,8 @@ public:
 
     std::string ToString() const
     {
-        return strprintf("CBlockIndex(nprev=%p, pnext=%p, nFile=%u, nBlockPos=%-6d nHeight=%d, nMint=%s, nMoneySupply=%s, nFlags=(%s)(%d)(%s), nStakeModifier=%016" PRIx64 ", nStakeModifierChecksum=%08x, hashProof=%s, prevoutStake=(%s), nStakeTime=%d merkle=%s, hashBlock=%s)",
-            pprev, pnext, nFile, nBlockPos, nHeight,
+        return strprintf("CBlockIndex(nprev=%p, pnext=%p, nFile=%u, nBlockPos=%-6d nHeight=%d, nPOWHeight=%d, nPOSHeight=%d, nMint=%s, nMoneySupply=%s, nFlags=(%s)(%d)(%s), nStakeModifier=%016" PRIx64 ", nStakeModifierChecksum=%08x, hashProof=%s, prevoutStake=(%s), nStakeTime=%d merkle=%s, hashBlock=%s)",
+            pprev, pnext, nFile, nBlockPos, nHeight, nPOWHeight, nPOSHeight,
             FormatMoney(nMint).c_str(), FormatMoney(nMoneySupply).c_str(),
             GeneratedStakeModifier() ? "MOD" : "-", GetStakeEntropyBit(), IsProofOfStake()? "PoS" : "PoW",
             nStakeModifier, nStakeModifierChecksum, 
@@ -1373,6 +1379,8 @@ public:
         READWRITE(nFile);
         READWRITE(nBlockPos);
         READWRITE(nHeight);
+	READWRITE(nPOWHeight);
+	READWRITE(nPOSHeight);
         READWRITE(nMint);
         READWRITE(nMoneySupply);
         READWRITE(nFlags);
@@ -1565,6 +1573,14 @@ public:
         if (!pindex)
             return 0;
         return pindex->nHeight;
+    }
+
+    int GetFilteredHeight(bool fProofOfStake) {
+        CBlockIndex* pindex = GetBlockIndex();
+        if (!pindex)
+            return 0;
+
+	return fProofOfStake ? pindex->nPOWHeight : pindex->nPOSHeight;
     }
 };
 
