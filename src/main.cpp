@@ -44,6 +44,9 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
+uint32_t nBitsPOWLimit = bnProofOfWorkLimit.GetCompact();
+uint32_t nBitsPOSLimit = bnProofOfStakeLimit.GetCompact();
+
 static const int nMaxAdjustUp = 25;
 static const int nMaxAdjustDown = 50;
 static const int nAdjustAmplitude = 25;
@@ -54,6 +57,8 @@ static const double nMaxDeltaThreshold = 10.0;
 static const double nDeltaDamping = 75.0;
 
 uint64_t nTargetSpacing = 5 * 60;
+int nRetargetInterval = 3;
+
 unsigned int nStakeMinAge = 3 * 24 * 60 * 60;
 unsigned int nStakeMaxAge = -1;
 unsigned int nModifierInterval = 5 * 60;
@@ -1121,13 +1126,14 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
 unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
     CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
+    uint32_t nBitsTargetLimit = fProofOfStake ? nBitsPOSLimit : nBitsPOWLimit;
 
     // find the previous 2 blocks of the requested type (either POS or POW)
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
 
     // Genesis block,  or first POS block not yet mined
     if (pindexPrev == NULL)
-        return bnTargetLimit.GetCompact();
+        return nBitsTargetLimit;
 
     // is there another block of the correct type prior to pindexPrev?
     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
@@ -1165,25 +1171,24 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
     bnNew.SetCompact(pindexPrev->nBits);
     bnNew *= nActualTimespan;
     bnNew /= retargetTimespan;
+    uint32_t target = bnNew.GetCompact();
 
     if (bnNew <= 0 || bnNew > bnTargetLimit) {
 	printf("bnNew: %08X > bnTargetLimit: %08X, resetting\n",
-	       bnNew.GetCompact(), bnTargetLimit.GetCompact());
-        bnNew = bnTargetLimit;
+	       target, nBitsTargetLimit);
+        target = nBitsTargetLimit;
     }
-
-    uint32_t newBits = bnNew.GetCompact();
 
 #ifdef DEBUG_DIFFICULTY
     if (!fProofOfStake) {
-        printf("bnNew: %08X, diff: %0.8f\n", newBits, GetDifficultyFromTarget(newBits));
+        printf("target: %08X, diff: %0.8f\n", target, GetDifficultyFromTarget(newBits));
     }
 #endif
 
-    return newBits;
+    return target;
 }
 
-/* 
+/*
  * This is our rework.  We want to set the difficulty based on the hashrates
  * of the last 8 blocks.  We will also put bounds on how much the difficulty
  * is allowed to change per re-target.
@@ -1191,17 +1196,37 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 #define DEBUG_DIFFICULTY
 unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    static const int weight[RETARGET_BLOCK_COUNT] = {4, 2, 1, 1, 1, 1, 1, 1};
-
-    CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
-    uint32_t nBitsTargetLimit = bnTargetLimit.GetCompact();
-
+#ifdef DEBUG_DIFFICULTY
     printf("Calculating target for %s\n", fProofOfStake ? "POS" : "POW");
+#endif
+
+    int nHeight = fProofOfStake ? pindexLast->nPOWHeight : pindexLast->nPOSHeight;
+    const CBlockIndex* pIndex = pindexLast;
+    uint32_t nBitsTargetLimit = fProofOfStake ? nBitsPOSLimit : nBitsPOWLimit;
+
+    int nRetarget = nHeight % nRetargetInterval;
+#ifdef DEBUG_DIFFICULTY
+    printf("Retarget: %d\n", nRetarget);
+#endif
+    if (nRetarget != 0) {
+	pIndex = GetLastBlockIndex(pIndex, fProofOfStake);
+	if (!pIndex) {
+#ifdef DEBUG_DIFFICULTY
+	    printf("Bypassing: nBits: %08X\n", nBitsTargetLimit);
+#endif
+	    return nBitsTargetLimit;
+        }
+#ifdef DEBUG_DIFFICULTY
+	printf("Reusing nBits: %08X\n", pIndex->nBits);
+#endif
+	return pIndex->nBits;
+    }
+
+    static const int weight[RETARGET_BLOCK_COUNT] = {4, 2, 1, 1, 1, 1, 1, 1};
 
     // find the previous 8 blocks of the requested type (either POS or POW)
     const CBlockIndex* pOldBlocks[RETARGET_BLOCK_COUNT];
 
-    const CBlockIndex* pIndex = pindexLast;
     for (int i = 0; i < RETARGET_BLOCK_COUNT; i++) {
 	if (pIndex) {
 	    pOldBlocks[i] = GetLastBlockIndex(pIndex, fProofOfStake);
@@ -1256,7 +1281,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	    tot_dt_weight += weight[i];
 	}
     }
-    
+
     if (tot_dt_weight == 0) {
 	avg_dt = 0;
     } else {
@@ -1270,8 +1295,8 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 
     for (int i = 0; i < RETARGET_BLOCK_COUNT-1; i++) {
 	if (dt[i]) {
-            hashcount[i] = (uint64_t)(difficulty[i] * (double)bit32); 
-            hashrate[i] = hashcount[i] / dt[i]; 
+            hashcount[i] = (uint64_t)(difficulty[i] * (double)bit32);
+            hashrate[i] = hashcount[i] / dt[i];
 	    total_time += avg_dt;
 	    total_hashcount += hashcount[i];
 	} else {
@@ -1311,7 +1336,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     printf("nTargetSpacing: %" PRIu64 ", avg hashrate: %" PRIu64 "\n",
 	    nTargetSpacing, avg_hashrate);
     double newDiff = (double)(nTargetSpacing * avg_hashrate) / (double)(bit32);
-    
+
     double diffChange;
     if (difficulty[0] <= 0.000000001) {
 	diffChange = 0.0;
@@ -1342,7 +1367,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     clampedDiff *= (100.0 + diffChange);
     clampedDiff /= 100.0;
 
-    printf("Clamped difficulty: %0.8f, Change: %0.3f%%\n", clampedDiff, 
+    printf("Clamped difficulty: %0.8f, Change: %0.3f%%\n", clampedDiff,
            diffChange);
 
     uint32_t target = GetTargetFromDifficulty(clampedDiff);
@@ -1350,6 +1375,8 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 
     CBigNum bnNew;
     bnNew.SetCompact(target);
+    CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
+
     if (bnNew <= 0 || bnNew > bnTargetLimit) {
 	printf("target: %08X > bnTargetLimit: %08X, resetting\n",
 	       target, nBitsTargetLimit);
@@ -2721,6 +2748,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         bnTrustedModulus.SetHex("f0d14cf72623dacfe738d0892b599be0f31052239cddd95a3f25101c801dc990453b38c9434efe3f372db39a32c2bb44cbaea72d62c8931fa785b0ec44531308df3e46069be5573e49bb29f4d479bfc3d162f57a5965db03810be7636da265bfced9c01a6b0296c77910ebdc8016f70174f0f18a57b3b971ac43a934c6aedbc5c866764a3622b5b7e3f9832b8b3f133c849dbcc0396588abcd1e41048555746e4823fb8aba5b3d23692c6857fccce733d6bb6ec1d5ea0afafecea14a0f6f798b6b27f77dc989c557795cc39a0940ef6bb29a7fc84135193a55bcfc2f01dd73efad1b69f45a55198bd0e6bef4d338e452f6a420f1ae2b1167b923f76633ab6e55");
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 16 bits PoW target limit for testnet
+	nBitsPOWLimit = bnProofOfWorkLimit.GetCompact();
         nStakeMinAge = 1 * 60 * 60; // test net min age is 1 hour
         nCoinbaseMaturity = 10; // test maturity is 10 blocks
     }
@@ -2763,7 +2791,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
         block.nTime    = 1629097342;
-        block.nBits    = bnProofOfWorkLimit.GetCompact();
+        block.nBits    = nBitsPOWLimit;
         block.nNonce   = !fTestNet ? 1220093 : 0;
 
         if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
