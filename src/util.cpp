@@ -1369,3 +1369,45 @@ long hex2long(const char* hexString)
 
     return ret;
 }
+
+
+int OutputTargetCSV(int index, const char *pszFormat, ...)
+{
+    // print to CSV files
+    static FILE *files[2] = {NULL, NULL};
+    static bool headers[2] = {0, 0};
+    static char *filenames[2] = {"targeting-POW.csv", "targeting-POS.csv"};
+
+    FILE *fileout = files[index];
+    int ret = 0;
+
+    printf("Index: %d, filename: %s, headers: %d\n", index, filenames[index],
+           headers[index]);
+
+    if (!fileout) {
+        boost::filesystem::path pathCsv = GetDataDir() / filenames[index];
+        fileout = fopen(pathCsv.string().c_str(), "a");
+        if (fileout) {
+	    setbuf(fileout, NULL); // unbuffered
+	    files[index] = fileout;
+	    headers[index] = ftell(fileout) ? 1 : 0;
+	}
+    }
+
+    if (!fileout) {
+	return ret;
+    }
+
+    if (!headers[index]) {
+	fprintf(fileout, "height,timestamp,dt,avg_dt,stddev_dt,avg_hashrate,difficulty\n");
+	headers[index] = 1;
+    }
+
+    va_list arg_ptr;
+    va_start(arg_ptr, pszFormat);
+    ret = vfprintf(fileout, pszFormat, arg_ptr);
+    va_end(arg_ptr);
+
+    return ret;
+}
+

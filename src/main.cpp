@@ -57,7 +57,7 @@ static const double nMaxDeltaThreshold = 10.0;
 static const double nDeltaDamping = 75.0;
 
 uint64_t nTargetSpacing = 5 * 60;
-int nRetargetInterval = 3;
+int nRetargetInterval = 4;
 
 unsigned int nStakeMinAge = 3 * 24 * 60 * 60;
 unsigned int nStakeMaxAge = -1;
@@ -1200,9 +1200,13 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     printf("Calculating target for %s\n", fProofOfStake ? "POS" : "POW");
 #endif
 
+    static int nLastHeight[2] = {0, 0};
     int nHeight = fProofOfStake ? pindexLast->nPOWHeight : pindexLast->nPOSHeight;
     const CBlockIndex* pIndex = pindexLast;
     uint32_t nBitsTargetLimit = fProofOfStake ? nBitsPOSLimit : nBitsPOWLimit;
+
+    static const char *pszFormat = "%d,%" PRIu64 ",%" PRId64",%" PRId64 ",%0.3f,%" PRIu64 ",%0.8f\n";
+    int csvIndex = fProofOfStake ? 1 : 0;
 
     int nRetarget = nHeight % nRetargetInterval;
 #ifdef DEBUG_DIFFICULTY
@@ -1219,12 +1223,18 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 #ifdef DEBUG_DIFFICULTY
 	printf("Reusing nBits: %08X\n", pIndex->nBits);
 #endif
+	if (nHeight > nLastHeight[csvIndex]) {
+	    nLastHeight[csvIndex] = nHeight;
+            OutputTargetCSV(csvIndex, pszFormat,
+			    nHeight, pIndex->GetBlockTime(),
+			    0, 0, 0, 0, GetDifficultyFromTarget(pIndex->nBits));
+	}
 	return pIndex->nBits;
     }
 
-    static const int weight[RETARGET_BLOCK_COUNT] = {4, 2, 1, 1, 1, 1, 1, 1};
+    static const int weight[RETARGET_BLOCK_COUNT-1] = {1, 2, 2, 2, 1};
 
-    // find the previous 8 blocks of the requested type (either POS or POW)
+    // find the previous X blocks of the requested type (either POS or POW)
     const CBlockIndex* pOldBlocks[RETARGET_BLOCK_COUNT];
 
     for (int i = 0; i < RETARGET_BLOCK_COUNT; i++) {
@@ -1385,6 +1395,13 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 
     double verify = GetDifficultyFromTarget(target);
     printf("final nBits: %08X, final difficulty: %0.8f\n", target, verify);
+
+    if (nHeight > nLastHeight[csvIndex]) {
+        nLastHeight[csvIndex] = nHeight;
+        OutputTargetCSV(csvIndex, pszFormat,
+			nHeight, pIndex->GetBlockTime(),
+                        dt[0], avg_dt, stddev_dt, avg_hashrate, verify);
+    }
 
     return target;
 }

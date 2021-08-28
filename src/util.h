@@ -165,6 +165,7 @@ extern bool fReopenDebugLog;
 void RandAddSeed();
 void RandAddSeedPerfmon();
 int ATTR_WARN_PRINTF(1,2) OutputDebugStringF(const char* pszFormat, ...);
+int ATTR_WARN_PRINTF(2,3) OutputTargetCSV(int index, const char *pszFormat, ...);
 
 /*
   Rationale for the real_strprintf / strprintf construction:
