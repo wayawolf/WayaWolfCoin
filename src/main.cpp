@@ -51,10 +51,10 @@ static const int nMaxAdjustUp = 25;
 static const int nMaxAdjustDown = 50;
 static const int nAdjustAmplitude = 25;
 
-static const double nMaxDiffIncrease = 75.0;
-static const double nMaxDiffDecrease = 75.0;
+static const double nMaxDiffIncrease = 10.0;
+static const double nMaxDiffDecrease = 25.0;
 static const double nMaxDeltaThreshold = 10.0;
-static const double nDeltaDamping = 75.0;
+static const double nDeltaDamping = 50.0;
 
 uint64_t nTargetSpacing = 5 * 60;
 int nRetargetInterval = 4;
@@ -1201,7 +1201,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 #endif
 
     static int nLastHeight[2] = {0, 0};
-    int nHeight = fProofOfStake ? pindexLast->nPOWHeight : pindexLast->nPOSHeight;
+    int nHeight = fProofOfStake ? pindexLast->nPOSHeight : pindexLast->nPOWHeight;
     const CBlockIndex* pIndex = pindexLast;
     uint32_t nBitsTargetLimit = fProofOfStake ? nBitsPOSLimit : nBitsPOWLimit;
 
