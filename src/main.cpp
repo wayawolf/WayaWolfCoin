@@ -1223,12 +1223,16 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 #ifdef DEBUG_DIFFICULTY
 	printf("Reusing nBits: %08X\n", pIndex->nBits);
 #endif
+
+#ifdef THIS_IS_FUCKY
 	if (nHeight > nLastHeight[csvIndex]) {
 	    nLastHeight[csvIndex] = nHeight;
             OutputTargetCSV(csvIndex, pszFormat,
 			    nHeight, pIndex->GetBlockTime(),
-			    0, 0, 0, 0, GetDifficultyFromTarget(pIndex->nBits));
+			    0, 0, 0.0, 0, 
+			    (float)GetDifficultyFromTarget(pIndex->nBits));
 	}
+#endif
 	return pIndex->nBits;
     }
 
@@ -1396,12 +1400,15 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
     double verify = GetDifficultyFromTarget(target);
     printf("final nBits: %08X, final difficulty: %0.8f\n", target, verify);
 
+#ifdef THIS_IS_FUCKY
     if (nHeight > nLastHeight[csvIndex]) {
         nLastHeight[csvIndex] = nHeight;
         OutputTargetCSV(csvIndex, pszFormat,
 			nHeight, pIndex->GetBlockTime(),
-                        dt[0], avg_dt, stddev_dt, avg_hashrate, verify);
+                        dt[0], avg_dt, (float)stddev_dt, avg_hashrate,
+		       	(float)verify);
     }
+#endif
 
     return target;
 }
