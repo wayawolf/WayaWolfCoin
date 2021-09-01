@@ -51,7 +51,7 @@ static const int nMaxAdjustUp = 25;
 static const int nMaxAdjustDown = 50;
 static const int nAdjustAmplitude = 25;
 
-static const double nMaxDiffIncrease = 10.0;
+static const double nMaxDiffIncrease = 25.0;
 static const double nMaxDiffDecrease = 25.0;
 static const double nMaxDeltaThreshold = 10.0;
 static const double nDeltaDamping = 50.0;
