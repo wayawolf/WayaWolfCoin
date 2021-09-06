@@ -1850,12 +1850,29 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     if (IsProofOfWork())
     {
         int64_t nReward = GetProofOfWorkReward(nFees, prevHash);
-        // Check coinbase reward
-        if (0 && vtx[0].GetValueOut() > nReward + vtx[0].GetBurnedValue())
-            return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%" PRId64 " vs calculated=%" PRId64 ")",
-                   vtx[0].GetValueOut(),
-                   nReward));
+	int64_t nValue = vtx[0].GetValueOut();
+	int64_t nBurned = vtx[0].GetBurnedValue();
+
+	// Check for improperly burned coins
+	if (nBurned) {
+            if (nBurned < 0) {
+                return DoS(50, error("ConnectBlock() : negative burn detected (%" PRId64 ")",
+                       nBurned));
+	    }
+
+	    if (nValue > nBurned) {
+                return DoS(50, error("ConnectBlock() : incorrect burn detected (actual=%" PRId64 " vs calculated=%" PRId64 ")",
+                       nValue, nBurned));
+	    }
+	} else {
+            // Check coinbase reward
+	    if (nValue > nReward) {
+                return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%" PRId64 " vs calculated=%" PRId64 ")",
+                       nValue, nReward));
+	    }
+	}
     }
+
     if (IsProofOfStake())
     {
         // ppcoin: coin stake tx earns reward instead of paying fee
