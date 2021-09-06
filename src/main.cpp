@@ -59,7 +59,12 @@ static const double nDeltaDamping = 50.0;
 uint64_t nTargetSpacing = 5 * 60;
 int nRetargetInterval = 4;
 
+#ifdef PRODUCTION
 unsigned int nStakeMinAge = 3 * 24 * 60 * 60;
+#else
+// For testing staking
+unsigned int nStakeMinAge = 12 * 60 * 60;
+#endif
 unsigned int nStakeMaxAge = -1;
 unsigned int nModifierInterval = 5 * 60;
 
@@ -1831,10 +1836,11 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 	    int64_t nBurnValue = tx.GetBurnedValue();
             nValueIn += nTxValueIn;
             nValueOut += nTxValueOut;
-            if (!tx.IsCoinStake())
-                nFees += nTxValueIn - (nTxValueOut + nBurnValue);
-            if (tx.IsCoinStake())
+            if (tx.IsCoinStake()) {
                 nStakeReward = (nTxValueOut + nBurnValue) - nTxValueIn;
+	    } else {
+                nFees += nTxValueIn - (nTxValueOut + nBurnValue);
+	    }
 
             if (!tx.ConnectInputs(txdb, mapInputs, mapQueuedChanges, posThisTx, pindex, true, false))
                 return false;
