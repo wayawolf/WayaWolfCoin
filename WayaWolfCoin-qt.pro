@@ -84,7 +84,7 @@ win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++
 
 # Force winpthread to be static
-win32:QMAKE_LFLAGS += -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive
+win32:LIBS += -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive
 
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
