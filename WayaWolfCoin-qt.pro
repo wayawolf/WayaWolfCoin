@@ -60,8 +60,7 @@ contains(RELEASE, 1) {
     # Mac: compile for maximum compatibility (10.6, 64-bit)
     macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.6 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk
 
-    #!win32:!macx {
-    !macx {
+    !win32:!macx {
         # Linux: static link
         LIBS += -Wl,-Bstatic -Wl,-z,relro -Wl,-z,now
     }
@@ -78,13 +77,14 @@ contains(RELEASE, 1) {
 # for extra security (see: https://wiki.debian.org/Hardening): this flag is GCC compiler-specific
 QMAKE_CXXFLAGS += -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
-#win32:QMAKE_LFLAGS *= -Wl,--dynamicbase
-win32:QMAKE_LFLAGS *= -Wl,--nxcompat
+win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
 #win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
 # i686-w64-mingw32
 win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++
-win32:QMAKE_LFLAGS *= -static
+
+# Force winpthread to be static
+win32:QMAKE_LFLAGS *= -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive
 
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
