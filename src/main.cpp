@@ -2333,10 +2333,6 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return DoS(100, error("CheckBlock() : size limits failed"));
 
-    // Check proof of work matches claimed amount
-    if (fCheckPOW && IsProofOfWork() && !CheckProofOfWork(GetPoWHash(), nBits))
-        return DoS(50, error("CheckBlock() : proof of work failed"));
-
     // Check timestamp
     if (GetBlockTime() > FutureDrift(GetAdjustedTime()))
         return error("CheckBlock() : block timestamp too far in the future");
@@ -2372,6 +2368,23 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         // NovaCoin: check proof-of-stake block signature
         if (fCheckSig && !CheckBlockSignature())
             return DoS(100, error("CheckBlock() : bad proof-of-stake block signature"));
+    } else {
+	// Do not allow coin stakes in PoW blocks
+	for (unsigned int i = 1; i < vtx.size(); i++) {
+	    if (vtx[i].IsCoinStake()) {
+		return DoS(100, error("CheckBlock() : rogue coin stake found in PoW block"));
+	    }
+	}
+
+	// Proof-of-work verification (check that the coins match
+	if (fCheckPOW && !CheckProofOfWork(GetPoWHash(), nBits)) {
+	    return DoS(50, error("CheckBlock() : proof-of-work verification failed"));
+	}
+
+	// Proof-of-work block signature verification
+	if (fCheckSig && !CheckBlockSignature()) {
+	    return DoS(100, error("CheckBlock() : bad proof-of-work block signature"));
+	}
     }
 
     // Check transactions
