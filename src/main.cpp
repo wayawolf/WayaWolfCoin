@@ -1187,7 +1187,8 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 
 #ifdef DEBUG_DIFFICULTY
     if (!fProofOfStake) {
-        printf("target: %08X, diff: %0.8f\n", target, GetDifficultyFromTarget(newBits));
+        printf("target: %08X, diff: %0.8f\n", target,
+               GetDifficultyFromTarget(newBits, nHeight));
     }
 #endif
 
@@ -1236,7 +1237,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
             OutputTargetCSV(csvIndex, pszFormat,
 			    nHeight, pIndex->GetBlockTime(),
 			    0, 0, 0.0, 0, 
-			    (float)GetDifficultyFromTarget(pIndex->nBits));
+			    (float)GetDifficultyFromTarget(pIndex->nBits, nHeight));
 	}
 #endif
 	return pIndex->nBits;
@@ -1272,7 +1273,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 		blockTime[i] = 1;
 	    }
 	    nBits[i] = pIndex->nBits;
-	    difficulty[i] = GetDifficultyFromTarget(nBits[i]);
+	    difficulty[i] = GetDifficultyFromTarget(nBits[i], nHeight);
 	} else {
 	    blockTime[i] = 0;
 	    nBits[i] = 0;
@@ -1403,7 +1404,7 @@ unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool fProofO
 	target = nBitsTargetLimit;
     }
 
-    double verify = GetDifficultyFromTarget(target);
+    double verify = GetDifficultyFromTarget(target, nHeight);
     printf("final nBits: %08X, final difficulty: %0.8f\n", target, verify);
 
 #ifdef THIS_IS_FUCKY

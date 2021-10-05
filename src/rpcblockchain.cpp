@@ -24,10 +24,10 @@ double GetDifficulty(const CBlockIndex* blockindex)
             blockindex = GetLastBlockIndex(pindexBest, false);
     }
 
-    return GetDifficultyFromTarget(blockindex->nBits);
+    return GetDifficultyFromTarget(blockindex->nBits, blockindex->nHeight);
 }
 
-double GetDifficultyFromTarget(uint32_t nBits)
+double GetDifficultyFromTarget(uint32_t nBits, int nHeight)
 {
     uint64_t numerator = 0x0000FFFF;
     uint64_t denominator = nBits & 0x00FFFFFF;
@@ -42,7 +42,7 @@ double GetDifficultyFromTarget(uint32_t nBits)
 #endif
     if (nShift < 0) {
         denominator <<= -8 * nShift;
-    } else if (nShift > 0) {
+    } else if (nShift > 0 && nHeight > 29849) {
         numerator <<= 8 * nShift;
     }
 

@@ -17,7 +17,7 @@ using namespace std;
 #define DEBUG_DIFFICULTY
 
 
-double GetDifficultyFromTarget(uint32_t nBits)
+double GetDifficultyFromTarget(uint32_t nBits, int nHeight)
 {
     uint64_t numerator = 0x0000FFFF;
     uint64_t denominator = nBits & 0x00FFFFFF;
@@ -32,7 +32,7 @@ double GetDifficultyFromTarget(uint32_t nBits)
 #endif
     if (nShift < 0) {
         denominator <<= -8 * nShift;
-    } else if (nShift > 0) {
+    } else if (nShift > 0 && nHeight > 29849) {
         numerator <<= 8 * nShift;
     }
 
@@ -106,14 +106,14 @@ int main(void)
 
     difficultyIn = 2.88488628;
     nBitsIn = GetTargetFromDifficulty(difficultyIn);
-    difficultyOut = GetDifficultyFromTarget(nBitsIn);
+    difficultyOut = GetDifficultyFromTarget(nBitsIn, 200);
     nBitsOut = GetTargetFromDifficulty(difficultyOut);
 
     printf("diff in: %0.8f, nBits in: 0x%08X, diff out: %0.8f, nBits out: 0x%08X\n", difficultyIn, nBitsIn, difficultyOut, nBitsOut);
 
     difficultyIn = (float)2.88488628;
     nBitsIn = GetTargetFromDifficulty(difficultyIn);
-    difficultyOut = GetDifficultyFromTarget(nBitsIn);
+    difficultyOut = GetDifficultyFromTarget(nBitsIn, 30000);
     nBitsOut = GetTargetFromDifficulty(difficultyOut);
 
     printf("diff in: %0.8f, nBits in: 0x%08X, diff out: %0.8f, nBits out: 0x%08X\n", difficultyIn, nBitsIn, difficultyOut, nBitsOut);
