@@ -42,7 +42,7 @@ double GetDifficultyFromTarget(uint32_t nBits)
 #endif
     if (nShift < 0) {
         denominator <<= -8 * nShift;
-    } else if (nShift < 0) {
+    } else if (nShift > 0) {
         numerator <<= 8 * nShift;
     }
 
