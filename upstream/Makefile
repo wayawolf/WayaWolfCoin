@@ -11,6 +11,6 @@ unarchive:
 
 build:	${SUBDIRS}
 
-${SUBDIRS}:
+${SUBDIRS}:	force
 	${MAKE} -C $@ -f Makefile.cryptocoin
 
