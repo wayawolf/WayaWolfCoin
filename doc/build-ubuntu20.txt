@@ -11,22 +11,13 @@ Versions used in this release:
 
 Dependency Installation
 -----------------------
-sudo apt install build-essential libssl1.0-dev libpng-dev zlib1g-dev \
-	python3-pip cmake 
-# IF needed, disable IPv6 so pip doesn't take forever (must be done as root!):
-cat - << EOF >> /etc/sysctl.conf
-net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-net.ipv6.conf.lo.disable_ipv6 = 1
-EOF
-sudo sysctl -p
-pip3 install -r requirements.txt
+sudo apt install build-essential libpng-dev zlib1g-dev cmake 
 # make sure to be in the top directory
-make -C upstream unarchive BASE_OS=ubuntu18
+make -C upstream unarchive BASE_OS=ubuntu20
 
 Dependency Build
 ----------------
-make -C upstream build BASE_OS=ubuntu18
+make -C upstream build BASE_OS=ubuntu20
 
 Building daemon
 ---------------

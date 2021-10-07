@@ -22,8 +22,8 @@
 		},
 		"openssl": {
 			"url": "https://www.openssl.org/source/openssl-1.0.2l.tar.gz",
-			"filename": "upenssl-1.0.21.tar.gz",
-			"dir": "openssl-1.0.21"
+			"filename": "upenssl-1.0.2l.tar.gz",
+			"dir": "openssl-1.0.2l"
 		}
 	},
 	"ubuntu18": ["berkeley-db", "qrencode", "miniupnpc", "boost"],
