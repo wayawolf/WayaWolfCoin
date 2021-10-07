@@ -6,7 +6,7 @@ SUBDIRS := src/*
 
 all:	unarchive build
 
-unarchve:
+unarchive:
 	./download.py
 
 build:	${SUBDIRS}
