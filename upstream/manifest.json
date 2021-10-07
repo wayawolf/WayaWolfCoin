@@ -19,8 +19,13 @@
 			"url": "https://downloads.sourceforge.net/project/boost/boost/1.76.0/boost_1_76_0.tar.bz2",
 			"filename": "boost-1.76.0.tar.bz2",
 			"dir": "boost_1_76_0"
+		},
+		"openssl": {
+			"url": "https://www.openssl.org/source/openssl-1.0.2l.tar.gz",
+			"filename": "upenssl-1.0.21.tar.gz",
+			"dir": "openssl-1.0.21"
 		}
 	},
 	"ubuntu18": ["berkeley-db", "qrencode", "miniupnpc", "boost"],
-	"ubuntu20": ["berkeley-db", "qrencode", "miniupnpc", "boost"]
+	"ubuntu20": ["berkeley-db", "qrencode", "miniupnpc", "boost", "openssl"]
 }
