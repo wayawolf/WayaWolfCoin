@@ -40,7 +40,7 @@ for dep in deps:
     if os.path.exists(outfile):
         print("Archive file for %s already exists" % dep)
     else:
-        print("Downloading dependency %s frorm %s" % (dep, url))
+        print("Downloading dependency %s from %s" % (dep, url))
         
         with requests.get(url, stream=True) as r:
             r.raise_for_status()
