@@ -1,14 +1,20 @@
-Copyright (c) 2009-2012 Bitcoin Developers
-Distributed under the MIT/X11 software license, see the accompanying
-file license.txt or http://www.opensource.org/licenses/mit-license.php.
-This product includes software developed by the OpenSSL Project for use in
-the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
-cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
-software written by Thomas Bernard.
-
-
 UNIX BUILD NOTES
 ================
+
+For Ubuntu 18 install instructions:  read build-ubuntu18.txt
+For Ubuntu 20 install instructions:  read build-ubuntu20.txt
+
+Versions used in this release:
+
+- libpng-1.6.37.tar.xz
+- qtbase-opensource-src-5.9.3.tar.xz
+- miniupnpc-2.2.2.tar.gz
+- zlib-1.2.11.tar.gz
+- openssl-1.0.2l.tar.gz
+- boost_1_76_0.tar.gz
+- db-4.8.30.NC.tar.gz
+- qrencode-3.4.4.tar.gz
+
 
 To Build
 --------
@@ -46,28 +52,6 @@ your package manager. Set USE_QRCODE to control this:
  USE_QRCODE=0   (the default) No QRCode support - libqrcode not required
  USE_QRCODE=1   QRCode support enabled
 
-Licenses of statically linked libraries:
- Berkeley DB   New BSD license with additional requirement that linked
-               software must be free open source
- Boost         MIT-like license
- miniupnpc     New (3-clause) BSD license
-
-Versions used in this release:
- GCC           4.9.0
- OpenSSL       1.0.1g
- Berkeley DB   5.3.28.NC
- Boost         1.55.0
- miniupnpc     1.9.20140401
-
-Dependency Build Instructions: Ubuntu & Debian
-----------------------------------------------
-sudo apt-get install build-essential
-sudo apt-get install libssl-dev
-sudo apt-get install libdb++-dev
-sudo apt-get install libboost-all-dev
-sudo apt-get install libqrencode-dev
-
-If using Boost 1.37, append -mt to the boost libraries in the makefile.
 
 
 Dependency Build Instructions: Gentoo

@@ -1,0 +1,10 @@
+CORES ?= $(shell nproc)
+export CORES
+
+BASEDIR := $(shell realpath ../..)
+
+all:
+	./configure --enable-static --disable-shared --without-tools \
+		--prefix=${BASEDIR}
+	${MAKE} -j ${CORES}
+	${MAKE} install

@@ -1,0 +1,13 @@
+CORES ?= $(shell nproc)
+export CORES
+
+BASEDIR := $(shell realpath ../..)
+BUILDDIR := build_unix
+
+all:
+	cd ${BUILDDIR} && \
+		../dist/configure --disable-shared --disable-replication \
+			--enable-cxx --prefix=${BASEDIR}
+	${MAKE} -C ${BUILDDIR} -j ${CORES}
+	${MAKE} -C ${BUILDDIR} install
+

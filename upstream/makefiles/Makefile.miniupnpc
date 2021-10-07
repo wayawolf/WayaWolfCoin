@@ -1,0 +1,9 @@
+CORES ?= $(shell nproc)
+export CORES
+
+BASEDIR := $(shell realpath ../..)
+
+all:
+	${MAKE} -j ${CORES} build/libminiupnpc.a
+	${MAKE} install-static INSTALLPREFIX=${BASEDIR} \
+		FILESTOINSTALL=build/libminiupnpc.a
