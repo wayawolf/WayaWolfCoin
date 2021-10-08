@@ -4,7 +4,7 @@ export CORES
 BASEDIR := $(shell realpath ../..)
 
 all:
-	./Configure zlib no-shared --prefix=${BASEDIR}
+	./Configure zlib no-shared --prefix=${BASEDIR} linux-x86_64 
 	${MAKE} -j ${CORES}
 	${MAKE} install_sw
 
