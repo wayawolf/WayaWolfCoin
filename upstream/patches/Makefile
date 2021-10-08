@@ -1,4 +1,4 @@
-SUBDIRS := $(shell ls | grep -v Makefile)
+SUBDIRS := $(shell ls | grep -v Makefile | grep -v done)
 DONEFILES := ${SUBDIRS:%=done.%}
 
 all:	${SUBDIRS}
