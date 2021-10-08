@@ -9,7 +9,10 @@ all:	unarchive build
 unarchive:
 	./download.py
 
-build:	${SUBDIRS}
+patches:	force
+	${MAKE} -C patches
+
+build:	patches ${SUBDIRS}
 
 ${SUBDIRS}:	force
 	${MAKE} -C $@ -f Makefile.cryptocoin
