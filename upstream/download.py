@@ -54,7 +54,26 @@ for dep in deps:
     else:
         print("Untarring %s" % dep)
         with tarfile.open(outfile) as tf:
-            tf.extractall(path=src_dir)
+            def is_within_directory(directory, target):
+                
+                abs_directory = os.path.abspath(directory)
+                abs_target = os.path.abspath(target)
+            
+                prefix = os.path.commonprefix([abs_directory, abs_target])
+                
+                return prefix == abs_directory
+            
+            def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
+            
+                for member in tar.getmembers():
+                    member_path = os.path.join(path, member.name)
+                    if not is_within_directory(path, member_path):
+                        raise Exception("Attempted Path Traversal in Tar File")
+            
+                tar.extractall(path, members, numeric_owner=numeric_owner) 
+                
+            
+            safe_extract(tf, path=src_dir)
 
     makefile_in = os.path.join(makefile_dir, "Makefile.%s" % dep)
     makefile_out = os.path.join(outdir, "Makefile.cryptocoin")
